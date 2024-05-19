@@ -1,0 +1,4 @@
+arm-none-eabi-objcopy --update-section ER_IROM1="d:\ALLtheDATA\STM32F103C8T6\STM32_Modules_R\OLED_HAL\EIDE\build\OLED_HAL\OLED_HAL.bin" "d:\ALLtheDATA\STM32F103C8T6\STM32_Modules_R\OLED_HAL\EIDE\build\OLED_HAL\OLED_HAL.axf" "d:\ALLtheDATA\STM32F103C8T6\STM32_Modules_R\OLED_HAL\EIDE\build\OLED_HAL\OLED_HAL.elf"
+
+arm-none-eabi-objcopy: d:\ALLtheDATA\STM32F103C8T6\STM32_Modules_R\OLED_HAL\EIDE\build\OLED_HAL\OLED_HAL.elf: warning: allocated section `RW_IRAM1' not in segment
+

@@ -1,0 +1,92 @@
+[2024-05-12 14:23:23]	link failed !, exit code: 1
+   at unify_builder.Program.Main(String[] args_)
+---
+Error: L6218E: Undefined symbol MX_ADC1_Init (referred from main.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 1 error messages.
+
+
+[2024-05-12 14:24:12]	link failed !, exit code: 1
+   at unify_builder.Program.Main(String[] args_)
+---
+Error: L6218E: Undefined symbol HAL_ADCEx_InjectedConvCpltCallback (referred from stm32f1xx_hal_adc.o).
+Error: L6218E: Undefined symbol MX_ADC1_Init (referred from main.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 2 error messages.
+
+
+[2024-05-12 14:24:38]	link failed !, exit code: 1
+   at unify_builder.Program.Main(String[] args_)
+---
+Error: L6218E: Undefined symbol MX_ADC1_Init (referred from main.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 1 error messages.
+
+
+[2024-05-12 14:25:23]	[done]
+	build successfully !
+
+[2024-05-12 14:25:37]	[done]
+	build successfully !
+
+[2024-05-12 14:28:02]	compilation failed at : "d:\ALLtheDATA\STM32F103C8T6\STM32_Modules_R\MQ2Sensor\Src\main.c", exit code: 1
+command: 
+  "D:\program\keil_5\ARM\ARMCC\bin\armcc.exe" -c --apcs=interwork -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I.cmsis/include -I../MDK-ARM/RTE/_EIDE_F103C8T6 -I.eide/deps -DUSE_HAL_DRIVER -DSTM32F103xB --cpu Cortex-M3 --li --c99 -D__MICROLIB -O3 --split_sections --diag_suppress=1 --diag_suppress=1295 -g -o .\build\EIDE_F103C8T6\.obj\__\Src\main.o --no_depend_system_headers --depend .\build\EIDE_F103C8T6\.obj\__\Src\main.d .\..\Src\main.c
+   at unify_builder.Program.Main(String[] args_)
+---
+".\..\Src\main.c", line 98: Error:  #20: identifier "adc_mq2" is undefined
+      adc_mq2 = ADC_IN_1() / 100;
+      ^
+.\..\Src\main.c: 0 warnings, 1 error
+
+[2024-05-12 14:28:47]	[done]
+	build successfully !
+
+[2024-05-12 14:29:49]	[done]
+	build successfully !
+
+[2024-05-12 14:35:09]	[done]
+	build successfully !
+
+[2024-05-12 14:38:02]	[done]
+	build successfully !
+
+[2024-05-12 14:38:37]	[done]
+	build successfully !
+
+[2024-05-12 14:38:51]	[done]
+	build successfully !
+
+[2024-05-12 14:39:03]	[done]
+	build successfully !
+
+[2024-05-12 14:39:18]	[done]
+	build successfully !
+
+[2024-05-12 14:39:45]	[done]
+	build successfully !
+
+[2024-05-12 14:40:40]	[done]
+	build successfully !
+
+[2024-05-12 14:41:28]	[done]
+	build successfully !
+
+[2024-05-12 14:41:37]	[done]
+	build successfully !
+
+[2024-05-12 14:41:47]	[done]
+	build successfully !
+
+[2024-05-12 14:41:56]	[done]
+	build successfully !
+
+[2024-05-12 14:42:04]	[done]
+	build successfully !
+
+[2024-05-12 14:43:45]	[done]
+	build successfully !
+
+[2024-05-12 14:43:59]	[done]
+	build successfully !
+

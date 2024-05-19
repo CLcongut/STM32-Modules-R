@@ -1,0 +1,23 @@
+--cpu Cortex-M3 --library_type=microlib --scatter "d:/ALLtheDATA/STM32F103C8T6/STM32_Modules_R/OLED_HAL/EIDE/build/OLED_HAL/OLED_HAL.sct" --strict --summary_stderr --info summarysizes --map --xref --callgraph --symbols --info sizes --info totals --info unused --info veneers
+--list .\build\OLED_HAL\OLED_HAL.map
+.\build\OLED_HAL\.obj\__\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal.o
+.\build\OLED_HAL\.obj\__\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_cortex.o
+.\build\OLED_HAL\.obj\__\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_dma.o
+.\build\OLED_HAL\.obj\__\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_exti.o
+.\build\OLED_HAL\.obj\__\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash.o
+.\build\OLED_HAL\.obj\__\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash_ex.o
+.\build\OLED_HAL\.obj\__\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio.o
+.\build\OLED_HAL\.obj\__\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio_ex.o
+.\build\OLED_HAL\.obj\__\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pwr.o
+.\build\OLED_HAL\.obj\__\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc.o
+.\build\OLED_HAL\.obj\__\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc_ex.o
+.\build\OLED_HAL\.obj\__\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim.o
+.\build\OLED_HAL\.obj\__\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim_ex.o
+.\build\OLED_HAL\.obj\__\Hardware\OLED.o
+.\build\OLED_HAL\.obj\__\Hardware\OLED_Data.o
+.\build\OLED_HAL\.obj\__\MDK-ARM\startup_stm32f103xb.o
+.\build\OLED_HAL\.obj\__\Src\gpio.o
+.\build\OLED_HAL\.obj\__\Src\main.o
+.\build\OLED_HAL\.obj\__\Src\stm32f1xx_hal_msp.o
+.\build\OLED_HAL\.obj\__\Src\stm32f1xx_it.o
+.\build\OLED_HAL\.obj\__\Src\system_stm32f1xx.o -o .\build\OLED_HAL\OLED_HAL.axf

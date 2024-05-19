@@ -1,0 +1,4 @@
+arm-none-eabi-objcopy --update-section ER_IROM1="d:\ALLtheDATA\STM32F103C8T6\STM32_Modules_R\MQTT_Test\EIDE\build\EIDE_F103C8T6\EIDE.bin" "d:\ALLtheDATA\STM32F103C8T6\STM32_Modules_R\MQTT_Test\EIDE\build\EIDE_F103C8T6\EIDE.axf" "d:\ALLtheDATA\STM32F103C8T6\STM32_Modules_R\MQTT_Test\EIDE\build\EIDE_F103C8T6\EIDE.elf"
+
+arm-none-eabi-objcopy: d:\ALLtheDATA\STM32F103C8T6\STM32_Modules_R\MQTT_Test\EIDE\build\EIDE_F103C8T6\EIDE.elf: warning: allocated section `RW_IRAM1' not in segment
+

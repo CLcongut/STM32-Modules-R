@@ -1,0 +1,779 @@
+[2024-05-11 21:06:40]	[done]
+	build successfully !
+
+[2024-05-11 21:12:48]	compilation failed at : "d:\ALLtheDATA\STM32F103C8T6\STM32_Modules_R\OLED_HAL\Hardware\OLED.c", exit code: 1
+command: 
+  "D:\program\keil_5\ARM\ARMCC\bin\armcc.exe" -c --apcs=interwork -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I.cmsis/include -I../MDK-ARM/RTE/_OLED_HAL -I.eide/deps -I../Hardware -DUSE_HAL_DRIVER -DSTM32F103xB --cpu Cortex-M3 --li --c99 -D__MICROLIB -O3 --split_sections --diag_suppress=1 --diag_suppress=1295 -g -o .\build\OLED_HAL\.obj\__\Hardware\OLED.o --no_depend_system_headers --depend .\build\OLED_HAL\.obj\__\Hardware\OLED.d .\..\Hardware\OLED.c
+   at unify_builder.Program.Main(String[] args_)
+---
+".\..\Hardware\OLED.c", line 21: Error:  #5: cannot open source input file "stm32f10x.h": No such file or directory
+  #include "stm32f10x.h"
+                        ^
+.\..\Hardware\OLED.c: 0 warnings, 1 error
+
+[2024-05-11 21:16:07]	compilation failed at : "d:\ALLtheDATA\STM32F103C8T6\STM32_Modules_R\OLED_HAL\Hardware\OLED_Data.c", exit code: 1
+command: 
+  "D:\program\keil_5\ARM\ARMCC\bin\armcc.exe" -c --apcs=interwork -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I.cmsis/include -I../MDK-ARM/RTE/_OLED_HAL -I.eide/deps -I../Hardware -DUSE_HAL_DRIVER -DSTM32F103xB --cpu Cortex-M3 --li --c99 -D__MICROLIB -O3 --split_sections --diag_suppress=1 --diag_suppress=1295 -g -o .\build\OLED_HAL\.obj\__\Hardware\OLED_Data.o --no_depend_system_headers --depend .\build\OLED_HAL\.obj\__\Hardware\OLED_Data.d .\..\Hardware\OLED_Data.c
+   at unify_builder.Program.Main(String[] args_)
+---
+".\..\Hardware\OLED_Data.c", line 335: Error:  #20: identifier "ChineseCell_t" is undefined
+  const ChineseCell_t OLED_CF16x16[] = {
+        ^
+".\..\Hardware\OLED_Data.c", line 337: Error:  #8: missing closing quote
+  	"Ôº?",
+  	^
+".\..\Hardware\OLED_Data.c", line 338: Error:  #253: expected a ","
+  	0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,
+  	^
+".\..\Hardware\OLED_Data.c", line 341: Error:  #8: missing closing quote
+  	"„Ä?",
+  	^
+".\..\Hardware\OLED_Data.c", line 342: Error:  #253: expected a ","
+  	0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,
+  	^
+".\..\Hardware\OLED_Data.c", line 345: Error:  #8: missing closing quote
+  	"‰Ω?",
+  	^
+".\..\Hardware\OLED_Data.c", line 346: Error:  #253: expected a ","
+  	0x00,0x80,0x60,0xF8,0x07,0x40,0x20,0x18,0x0F,0x08,0xC8,0x08,0x08,0x28,0x18,0x00,
+  	^
+".\..\Hardware\OLED_Data.c", line 349: Error:  #8: missing closing quote
+  	"Â•?",
+  	^
+".\..\Hardware\OLED_Data.c", line 350: Error:  #253: expected a ","
+  	0x10,0x10,0xF0,0x1F,0x10,0xF0,0x00,0x80,0x82,0x82,0xE2,0x92,0x8A,0x86,0x80,0x00,
+  	^
+".\..\Hardware\OLED_Data.c", line 353: Error:  #8: missing closing quote
+  	"‰∏?",
+  	^
+".\..\Hardware\OLED_Data.c", line 354: Error:  #253: expected a ","
+  	0x20,0x20,0x20,0xFE,0x20,0x20,0xFF,0x20,0x20,0x20,0xFF,0x20,0x20,0x20,0x20,0x00,
+  	^
+".\..\Hardware\OLED_Data.c", line 357: Error:  #8: missing closing quote
+  	"Áï?",
+  	^
+".\..\Hardware\OLED_Data.c", line 358: Error:  #253: expected a ","
+  	0x00,0x00,0x00,0xFE,0x92,0x92,0x92,0xFE,0x92,0x92,0x92,0xFE,0x00,0x00,0x00,0x00,
+  	^
+.\..\Hardware\OLED_Data.c: 0 warnings, 13 errors
+
+[2024-05-11 21:26:24]	compilation failed at : "d:\ALLtheDATA\STM32F103C8T6\STM32_Modules_R\OLED_HAL\Hardware\OLED_Data.c", exit code: 1
+command: 
+  "D:\program\keil_5\ARM\ARMCC\bin\armcc.exe" -c --apcs=interwork -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I.cmsis/include -I../MDK-ARM/RTE/_OLED_HAL -I.eide/deps -I../Hardware -DUSE_HAL_DRIVER -DSTM32F103xB --cpu Cortex-M3 --li --c99 -D__MICROLIB -O3 --split_sections --diag_suppress=1 --diag_suppress=1295 -g -o .\build\OLED_HAL\.obj\__\Hardware\OLED_Data.o --no_depend_system_headers --depend .\build\OLED_HAL\.obj\__\Hardware\OLED_Data.d .\..\Hardware\OLED_Data.c
+   at unify_builder.Program.Main(String[] args_)
+---
+".\..\Hardware\OLED_Data.c", line 335: Error:  #20: identifier "ChineseCell_t" is undefined
+  const ChineseCell_t OLED_CF16x16[] = {
+        ^
+".\..\Hardware\OLED_Data.c", line 337: Error:  #8: missing closing quote
+  	"Ôº?",
+  	^
+".\..\Hardware\OLED_Data.c", line 338: Error:  #253: expected a ","
+  	0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,
+  	^
+".\..\Hardware\OLED_Data.c", line 341: Error:  #8: missing closing quote
+  	"„Ä?",
+  	^
+".\..\Hardware\OLED_Data.c", line 342: Error:  #253: expected a ","
+  	0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,
+  	^
+".\..\Hardware\OLED_Data.c", line 345: Error:  #8: missing closing quote
+  	"‰Ω?",
+  	^
+".\..\Hardware\OLED_Data.c", line 346: Error:  #253: expected a ","
+  	0x00,0x80,0x60,0xF8,0x07,0x40,0x20,0x18,0x0F,0x08,0xC8,0x08,0x08,0x28,0x18,0x00,
+  	^
+".\..\Hardware\OLED_Data.c", line 349: Error:  #8: missing closing quote
+  	"Â•?",
+  	^
+".\..\Hardware\OLED_Data.c", line 350: Error:  #253: expected a ","
+  	0x10,0x10,0xF0,0x1F,0x10,0xF0,0x00,0x80,0x82,0x82,0xE2,0x92,0x8A,0x86,0x80,0x00,
+  	^
+".\..\Hardware\OLED_Data.c", line 353: Error:  #8: missing closing quote
+  	"‰∏?",
+  	^
+".\..\Hardware\OLED_Data.c", line 354: Error:  #253: expected a ","
+  	0x20,0x20,0x20,0xFE,0x20,0x20,0xFF,0x20,0x20,0x20,0xFF,0x20,0x20,0x20,0x20,0x00,
+  	^
+".\..\Hardware\OLED_Data.c", line 357: Error:  #8: missing closing quote
+  	"Áï?",
+  	^
+".\..\Hardware\OLED_Data.c", line 358: Error:  #253: expected a ","
+  	0x00,0x00,0x00,0xFE,0x92,0x92,0x92,0xFE,0x92,0x92,0x92,0xFE,0x00,0x00,0x00,0x00,
+  	^
+.\..\Hardware\OLED_Data.c: 0 warnings, 13 errors
+
+[2024-05-11 21:27:18]	compilation failed at : "d:\ALLtheDATA\STM32F103C8T6\STM32_Modules_R\OLED_HAL\Hardware\OLED_Data.c", exit code: 1
+command: 
+  "D:\program\keil_5\ARM\ARMCC\bin\armcc.exe" -c --apcs=interwork -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I.cmsis/include -I../MDK-ARM/RTE/_OLED_HAL -I.eide/deps -I../Hardware -DUSE_HAL_DRIVER -DSTM32F103xB --cpu Cortex-M3 --li --c99 -D__MICROLIB -O3 --split_sections --diag_suppress=1 --diag_suppress=1295 -g -o .\build\OLED_HAL\.obj\__\Hardware\OLED_Data.o --no_depend_system_headers --depend .\build\OLED_HAL\.obj\__\Hardware\OLED_Data.d .\..\Hardware\OLED_Data.c
+   at unify_builder.Program.Main(String[] args_)
+---
+".\..\Hardware\OLED_Data.c", line 335: Error:  #20: identifier "ChineseCell_t" is undefined
+  const ChineseCell_t OLED_CF16x16[] = {
+        ^
+".\..\Hardware\OLED_Data.c", line 337: Error:  #8: missing closing quote
+  	"Ôº?",
+  	^
+".\..\Hardware\OLED_Data.c", line 338: Error:  #253: expected a ","
+  	0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,
+  	^
+".\..\Hardware\OLED_Data.c", line 341: Error:  #8: missing closing quote
+  	"„Ä?",
+  	^
+".\..\Hardware\OLED_Data.c", line 342: Error:  #253: expected a ","
+  	0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,
+  	^
+".\..\Hardware\OLED_Data.c", line 345: Error:  #8: missing closing quote
+  	"‰Ω?",
+  	^
+".\..\Hardware\OLED_Data.c", line 346: Error:  #253: expected a ","
+  	0x00,0x80,0x60,0xF8,0x07,0x40,0x20,0x18,0x0F,0x08,0xC8,0x08,0x08,0x28,0x18,0x00,
+  	^
+".\..\Hardware\OLED_Data.c", line 349: Error:  #8: missing closing quote
+  	"Â•?",
+  	^
+".\..\Hardware\OLED_Data.c", line 350: Error:  #253: expected a ","
+  	0x10,0x10,0xF0,0x1F,0x10,0xF0,0x00,0x80,0x82,0x82,0xE2,0x92,0x8A,0x86,0x80,0x00,
+  	^
+".\..\Hardware\OLED_Data.c", line 353: Error:  #8: missing closing quote
+  	"‰∏?",
+  	^
+".\..\Hardware\OLED_Data.c", line 354: Error:  #253: expected a ","
+  	0x20,0x20,0x20,0xFE,0x20,0x20,0xFF,0x20,0x20,0x20,0xFF,0x20,0x20,0x20,0x20,0x00,
+  	^
+".\..\Hardware\OLED_Data.c", line 357: Error:  #8: missing closing quote
+  	"Áï?",
+  	^
+".\..\Hardware\OLED_Data.c", line 358: Error:  #253: expected a ","
+  	0x00,0x00,0x00,0xFE,0x92,0x92,0x92,0xFE,0x92,0x92,0x92,0xFE,0x00,0x00,0x00,0x00,
+  	^
+.\..\Hardware\OLED_Data.c: 0 warnings, 13 errors
+
+[2024-05-11 21:28:47]	compilation failed at : "d:\ALLtheDATA\STM32F103C8T6\STM32_Modules_R\OLED_HAL\Hardware\OLED_Data.c", exit code: 1
+command: 
+  "D:\program\keil_5\ARM\ARMCC\bin\armcc.exe" -c --apcs=interwork -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I.cmsis/include -I../MDK-ARM/RTE/_OLED_HAL -I.eide/deps -I../Hardware -DUSE_HAL_DRIVER -DSTM32F103xB --cpu Cortex-M3 --li --c99 -D__MICROLIB -O3 --split_sections --diag_suppress=1 --diag_suppress=1295 -g -o .\build\OLED_HAL\.obj\__\Hardware\OLED_Data.o --no_depend_system_headers --depend .\build\OLED_HAL\.obj\__\Hardware\OLED_Data.d .\..\Hardware\OLED_Data.c
+   at unify_builder.Program.Main(String[] args_)
+---
+".\..\Hardware\OLED_Data.c", line 335: Error:  #20: identifier "ChineseCell_t" is undefined
+  const ChineseCell_t OLED_CF16x16[] = {
+        ^
+".\..\Hardware\OLED_Data.c", line 337: Error:  #8: missing closing quote
+  	"Ôº?",
+  	^
+".\..\Hardware\OLED_Data.c", line 338: Error:  #253: expected a ","
+  	0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,
+  	^
+".\..\Hardware\OLED_Data.c", line 341: Error:  #8: missing closing quote
+  	"„Ä?",
+  	^
+".\..\Hardware\OLED_Data.c", line 342: Error:  #253: expected a ","
+  	0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,
+  	^
+".\..\Hardware\OLED_Data.c", line 345: Error:  #8: missing closing quote
+  	"‰Ω?",
+  	^
+".\..\Hardware\OLED_Data.c", line 346: Error:  #253: expected a ","
+  	0x00,0x80,0x60,0xF8,0x07,0x40,0x20,0x18,0x0F,0x08,0xC8,0x08,0x08,0x28,0x18,0x00,
+  	^
+".\..\Hardware\OLED_Data.c", line 349: Error:  #8: missing closing quote
+  	"Â•?",
+  	^
+".\..\Hardware\OLED_Data.c", line 350: Error:  #253: expected a ","
+  	0x10,0x10,0xF0,0x1F,0x10,0xF0,0x00,0x80,0x82,0x82,0xE2,0x92,0x8A,0x86,0x80,0x00,
+  	^
+".\..\Hardware\OLED_Data.c", line 353: Error:  #8: missing closing quote
+  	"‰∏?",
+  	^
+".\..\Hardware\OLED_Data.c", line 354: Error:  #253: expected a ","
+  	0x20,0x20,0x20,0xFE,0x20,0x20,0xFF,0x20,0x20,0x20,0xFF,0x20,0x20,0x20,0x20,0x00,
+  	^
+".\..\Hardware\OLED_Data.c", line 357: Error:  #8: missing closing quote
+  	"Áï?",
+  	^
+".\..\Hardware\OLED_Data.c", line 358: Error:  #253: expected a ","
+  	0x00,0x00,0x00,0xFE,0x92,0x92,0x92,0xFE,0x92,0x92,0x92,0xFE,0x00,0x00,0x00,0x00,
+  	^
+.\..\Hardware\OLED_Data.c: 0 warnings, 13 errors
+
+[2024-05-11 21:31:09]	compilation failed at : "d:\ALLtheDATA\STM32F103C8T6\STM32_Modules_R\OLED_HAL\Src\OLED_Data.c", exit code: 1
+command: 
+  "D:\program\keil_5\ARM\ARMCC\bin\armcc.exe" -c --apcs=interwork -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I.cmsis/include -I../MDK-ARM/RTE/_OLED_HAL -I.eide/deps -I../Hardware -DUSE_HAL_DRIVER -DSTM32F103xB --cpu Cortex-M3 --li --c99 -D__MICROLIB -O3 --split_sections --diag_suppress=1 --diag_suppress=1295 -g -o .\build\OLED_HAL\.obj\__\Src\OLED_Data.o --no_depend_system_headers --depend .\build\OLED_HAL\.obj\__\Src\OLED_Data.d .\..\Src\OLED_Data.c
+   at unify_builder.Program.Main(String[] args_)
+---
+".\..\Src\OLED_Data.c", line 335: Error:  #20: identifier "ChineseCell_t" is undefined
+  const ChineseCell_t OLED_CF16x16[] = {
+        ^
+".\..\Src\OLED_Data.c", line 337: Error:  #8: missing closing quote
+  	"Ôº?",
+  	^
+".\..\Src\OLED_Data.c", line 338: Error:  #253: expected a ","
+  	0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,
+  	^
+".\..\Src\OLED_Data.c", line 341: Error:  #8: missing closing quote
+  	"„Ä?",
+  	^
+".\..\Src\OLED_Data.c", line 342: Error:  #253: expected a ","
+  	0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,
+  	^
+".\..\Src\OLED_Data.c", line 345: Error:  #8: missing closing quote
+  	"‰Ω?",
+  	^
+".\..\Src\OLED_Data.c", line 346: Error:  #253: expected a ","
+  	0x00,0x80,0x60,0xF8,0x07,0x40,0x20,0x18,0x0F,0x08,0xC8,0x08,0x08,0x28,0x18,0x00,
+  	^
+".\..\Src\OLED_Data.c", line 349: Error:  #8: missing closing quote
+  	"Â•?",
+  	^
+".\..\Src\OLED_Data.c", line 350: Error:  #253: expected a ","
+  	0x10,0x10,0xF0,0x1F,0x10,0xF0,0x00,0x80,0x82,0x82,0xE2,0x92,0x8A,0x86,0x80,0x00,
+  	^
+".\..\Src\OLED_Data.c", line 353: Error:  #8: missing closing quote
+  	"‰∏?",
+  	^
+".\..\Src\OLED_Data.c", line 354: Error:  #253: expected a ","
+  	0x20,0x20,0x20,0xFE,0x20,0x20,0xFF,0x20,0x20,0x20,0xFF,0x20,0x20,0x20,0x20,0x00,
+  	^
+".\..\Src\OLED_Data.c", line 357: Error:  #8: missing closing quote
+  	"Áï?",
+  	^
+".\..\Src\OLED_Data.c", line 358: Error:  #253: expected a ","
+  	0x00,0x00,0x00,0xFE,0x92,0x92,0x92,0xFE,0x92,0x92,0x92,0xFE,0x00,0x00,0x00,0x00,
+  	^
+.\..\Src\OLED_Data.c: 0 warnings, 13 errors
+
+[2024-05-11 21:32:03]	link failed !, exit code: 1
+   at unify_builder.Program.Main(String[] args_)
+---
+Error: L6218E: Undefined symbol OLED_CF16x16 (referred from OLED.o).
+Error: L6218E: Undefined symbol OLED_GPIO_Init (referred from OLED.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 2 error messages.
+
+
+[2024-05-11 21:35:36]	compilation failed at : "d:\ALLtheDATA\STM32F103C8T6\STM32_Modules_R\OLED_HAL\Hardware\OLED_Data.c", exit code: 1
+command: 
+  "D:\program\keil_5\ARM\ARMCC\bin\armcc.exe" -c --apcs=interwork -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I.cmsis/include -I../MDK-ARM/RTE/_OLED_HAL -I.eide/deps -I../Hardware -DUSE_HAL_DRIVER -DSTM32F103xB --cpu Cortex-M3 --li --c99 -D__MICROLIB -O3 --split_sections --diag_suppress=1 --diag_suppress=1295 -g -o .\build\OLED_HAL\.obj\__\Hardware\OLED_Data.o --no_depend_system_headers --depend .\build\OLED_HAL\.obj\__\Hardware\OLED_Data.d .\..\Hardware\OLED_Data.c
+   at unify_builder.Program.Main(String[] args_)
+---
+".\..\Hardware\OLED_Data.c", line 335: Error:  #20: identifier "ChineseCell_t" is undefined
+  const ChineseCell_t OLED_CF16x16[] = {
+        ^
+".\..\Hardware\OLED_Data.c", line 337: Error:  #8: missing closing quote
+  	"Ôº?",
+  	^
+".\..\Hardware\OLED_Data.c", line 338: Error:  #253: expected a ","
+  	0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,
+  	^
+".\..\Hardware\OLED_Data.c", line 341: Error:  #8: missing closing quote
+  	"„Ä?",
+  	^
+".\..\Hardware\OLED_Data.c", line 342: Error:  #253: expected a ","
+  	0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,
+  	^
+".\..\Hardware\OLED_Data.c", line 345: Error:  #8: missing closing quote
+  	"‰Ω?",
+  	^
+".\..\Hardware\OLED_Data.c", line 346: Error:  #253: expected a ","
+  	0x00,0x80,0x60,0xF8,0x07,0x40,0x20,0x18,0x0F,0x08,0xC8,0x08,0x08,0x28,0x18,0x00,
+  	^
+".\..\Hardware\OLED_Data.c", line 349: Error:  #8: missing closing quote
+  	"Â•?",
+  	^
+".\..\Hardware\OLED_Data.c", line 350: Error:  #253: expected a ","
+  	0x10,0x10,0xF0,0x1F,0x10,0xF0,0x00,0x80,0x82,0x82,0xE2,0x92,0x8A,0x86,0x80,0x00,
+  	^
+".\..\Hardware\OLED_Data.c", line 353: Error:  #8: missing closing quote
+  	"‰∏?",
+  	^
+".\..\Hardware\OLED_Data.c", line 354: Error:  #253: expected a ","
+  	0x20,0x20,0x20,0xFE,0x20,0x20,0xFF,0x20,0x20,0x20,0xFF,0x20,0x20,0x20,0x20,0x00,
+  	^
+".\..\Hardware\OLED_Data.c", line 357: Error:  #8: missing closing quote
+  	"Áï?",
+  	^
+".\..\Hardware\OLED_Data.c", line 358: Error:  #253: expected a ","
+  	0x00,0x00,0x00,0xFE,0x92,0x92,0x92,0xFE,0x92,0x92,0x92,0xFE,0x00,0x00,0x00,0x00,
+  	^
+.\..\Hardware\OLED_Data.c: 0 warnings, 13 errors
+
+[2024-05-11 21:41:06]	compilation failed at : "d:\ALLtheDATA\STM32F103C8T6\STM32_Modules_R\OLED_HAL\Hardware\OLED_Data.c", exit code: 1
+command: 
+  "D:\program\keil_5\ARM\ARMCC\bin\armcc.exe" -c --apcs=interwork -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I.cmsis/include -I../MDK-ARM/RTE/_OLED_HAL -I.eide/deps -I../Hardware -DUSE_HAL_DRIVER -DSTM32F103xB --cpu Cortex-M3 --li --c99 -D__MICROLIB -O3 --split_sections --diag_suppress=1 --diag_suppress=1295 -g -o .\build\OLED_HAL\.obj\__\Hardware\OLED_Data.o --no_depend_system_headers --depend .\build\OLED_HAL\.obj\__\Hardware\OLED_Data.d .\..\Hardware\OLED_Data.c
+   at unify_builder.Program.Main(String[] args_)
+---
+".\..\Hardware\OLED_Data.c", line 335: Error:  #20: identifier "ChineseCell_t" is undefined
+  const ChineseCell_t OLED_CF16x16[] = {
+        ^
+".\..\Hardware\OLED_Data.c", line 337: Error:  #8: missing closing quote
+  	"Ôº?",
+  	^
+".\..\Hardware\OLED_Data.c", line 338: Error:  #253: expected a ","
+  	0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,
+  	^
+".\..\Hardware\OLED_Data.c", line 341: Error:  #8: missing closing quote
+  	"„Ä?",
+  	^
+".\..\Hardware\OLED_Data.c", line 342: Error:  #253: expected a ","
+  	0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,
+  	^
+".\..\Hardware\OLED_Data.c", line 345: Error:  #8: missing closing quote
+  	"‰Ω?",
+  	^
+".\..\Hardware\OLED_Data.c", line 346: Error:  #253: expected a ","
+  	0x00,0x80,0x60,0xF8,0x07,0x40,0x20,0x18,0x0F,0x08,0xC8,0x08,0x08,0x28,0x18,0x00,
+  	^
+".\..\Hardware\OLED_Data.c", line 349: Error:  #8: missing closing quote
+  	"Â•?",
+  	^
+".\..\Hardware\OLED_Data.c", line 350: Error:  #253: expected a ","
+  	0x10,0x10,0xF0,0x1F,0x10,0xF0,0x00,0x80,0x82,0x82,0xE2,0x92,0x8A,0x86,0x80,0x00,
+  	^
+".\..\Hardware\OLED_Data.c", line 353: Error:  #8: missing closing quote
+  	"‰∏?",
+  	^
+".\..\Hardware\OLED_Data.c", line 354: Error:  #253: expected a ","
+  	0x20,0x20,0x20,0xFE,0x20,0x20,0xFF,0x20,0x20,0x20,0xFF,0x20,0x20,0x20,0x20,0x00,
+  	^
+".\..\Hardware\OLED_Data.c", line 357: Error:  #8: missing closing quote
+  	"Áï?",
+  	^
+".\..\Hardware\OLED_Data.c", line 358: Error:  #253: expected a ","
+  	0x00,0x00,0x00,0xFE,0x92,0x92,0x92,0xFE,0x92,0x92,0x92,0xFE,0x00,0x00,0x00,0x00,
+  	^
+.\..\Hardware\OLED_Data.c: 0 warnings, 13 errors
+
+[2024-05-11 21:41:45]	compilation failed at : "d:\ALLtheDATA\STM32F103C8T6\STM32_Modules_R\OLED_HAL\Hardware\OLED_Data.c", exit code: 1
+command: 
+  "D:\program\keil_5\ARM\ARMCC\bin\armcc.exe" -c --apcs=interwork -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I.cmsis/include -I../MDK-ARM/RTE/_OLED_HAL -I.eide/deps -I../Hardware -DUSE_HAL_DRIVER -DSTM32F103xB --cpu Cortex-M3 --li --c99 -D__MICROLIB -O3 --split_sections --diag_suppress=1 --diag_suppress=1295 -g -o .\build\OLED_HAL\.obj\__\Hardware\OLED_Data.o --no_depend_system_headers --depend .\build\OLED_HAL\.obj\__\Hardware\OLED_Data.d .\..\Hardware\OLED_Data.c
+   at unify_builder.Program.Main(String[] args_)
+---
+".\..\Hardware\OLED_Data.c", line 335: Error:  #20: identifier "ChineseCell_t" is undefined
+  const ChineseCell_t OLED_CF16x16[] = {
+        ^
+".\..\Hardware\OLED_Data.c", line 337: Error:  #8: missing closing quote
+  	"Ôº?",
+  	^
+".\..\Hardware\OLED_Data.c", line 338: Error:  #253: expected a ","
+  	0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,
+  	^
+".\..\Hardware\OLED_Data.c", line 341: Error:  #8: missing closing quote
+  	"„Ä?",
+  	^
+".\..\Hardware\OLED_Data.c", line 342: Error:  #253: expected a ","
+  	0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,
+  	^
+".\..\Hardware\OLED_Data.c", line 345: Error:  #8: missing closing quote
+  	"‰Ω?",
+  	^
+".\..\Hardware\OLED_Data.c", line 346: Error:  #253: expected a ","
+  	0x00,0x80,0x60,0xF8,0x07,0x40,0x20,0x18,0x0F,0x08,0xC8,0x08,0x08,0x28,0x18,0x00,
+  	^
+".\..\Hardware\OLED_Data.c", line 349: Error:  #8: missing closing quote
+  	"Â•?",
+  	^
+".\..\Hardware\OLED_Data.c", line 350: Error:  #253: expected a ","
+  	0x10,0x10,0xF0,0x1F,0x10,0xF0,0x00,0x80,0x82,0x82,0xE2,0x92,0x8A,0x86,0x80,0x00,
+  	^
+".\..\Hardware\OLED_Data.c", line 353: Error:  #8: missing closing quote
+  	"‰∏?",
+  	^
+".\..\Hardware\OLED_Data.c", line 354: Error:  #253: expected a ","
+  	0x20,0x20,0x20,0xFE,0x20,0x20,0xFF,0x20,0x20,0x20,0xFF,0x20,0x20,0x20,0x20,0x00,
+  	^
+".\..\Hardware\OLED_Data.c", line 357: Error:  #8: missing closing quote
+  	"Áï?",
+  	^
+".\..\Hardware\OLED_Data.c", line 358: Error:  #253: expected a ","
+  	0x00,0x00,0x00,0xFE,0x92,0x92,0x92,0xFE,0x92,0x92,0x92,0xFE,0x00,0x00,0x00,0x00,
+  	^
+.\..\Hardware\OLED_Data.c: 0 warnings, 13 errors
+
+[2024-05-11 21:42:54]	compilation failed at : "d:\ALLtheDATA\STM32F103C8T6\STM32_Modules_R\OLED_HAL\Hardware\OLED_Data.c", exit code: 1
+command: 
+  "D:\program\keil_5\ARM\ARMCC\bin\armcc.exe" -c --apcs=interwork -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I.cmsis/include -I../MDK-ARM/RTE/_OLED_HAL -I.eide/deps -I../Hardware -DUSE_HAL_DRIVER -DSTM32F103xB --cpu Cortex-M3 --li --c99 -D__MICROLIB -O3 --split_sections --diag_suppress=1 --diag_suppress=1295 -g -o .\build\OLED_HAL\.obj\__\Hardware\OLED_Data.o --no_depend_system_headers --depend .\build\OLED_HAL\.obj\__\Hardware\OLED_Data.d .\..\Hardware\OLED_Data.c
+   at unify_builder.Program.Main(String[] args_)
+---
+".\..\Hardware\OLED_Data.c", line 335: Error:  #20: identifier "ChineseCell_t" is undefined
+  const ChineseCell_t OLED_CF16x16[] = {
+        ^
+".\..\Hardware\OLED_Data.c", line 337: Error:  #8: missing closing quote
+  	"Ôº?",
+  	^
+".\..\Hardware\OLED_Data.c", line 338: Error:  #253: expected a ","
+  	0x00,
+  	^
+".\..\Hardware\OLED_Data.c", line 371: Error:  #8: missing closing quote
+  	"„Ä?",
+  	^
+".\..\Hardware\OLED_Data.c", line 372: Error:  #253: expected a ","
+  	0x00,
+  	^
+".\..\Hardware\OLED_Data.c", line 405: Error:  #8: missing closing quote
+  	"‰Ω?",
+  	^
+".\..\Hardware\OLED_Data.c", line 406: Error:  #253: expected a ","
+  	0x00,
+  	^
+".\..\Hardware\OLED_Data.c", line 439: Error:  #8: missing closing quote
+  	"Â•?",
+  	^
+".\..\Hardware\OLED_Data.c", line 440: Error:  #253: expected a ","
+  	0x10,
+  	^
+".\..\Hardware\OLED_Data.c", line 473: Error:  #8: missing closing quote
+  	"‰∏?",
+  	^
+".\..\Hardware\OLED_Data.c", line 474: Error:  #253: expected a ","
+  	0x20,
+  	^
+".\..\Hardware\OLED_Data.c", line 507: Error:  #8: missing closing quote
+  	"Áï?",
+  	^
+".\..\Hardware\OLED_Data.c", line 508: Error:  #253: expected a ","
+  	0x00,
+  	^
+.\..\Hardware\OLED_Data.c: 0 warnings, 13 errors
+
+[2024-05-11 21:43:07]	compilation failed at : "d:\ALLtheDATA\STM32F103C8T6\STM32_Modules_R\OLED_HAL\Hardware\OLED_Data.c", exit code: 1
+command: 
+  "D:\program\keil_5\ARM\ARMCC\bin\armcc.exe" -c --apcs=interwork -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I.cmsis/include -I../MDK-ARM/RTE/_OLED_HAL -I.eide/deps -I../Hardware -DUSE_HAL_DRIVER -DSTM32F103xB --cpu Cortex-M3 --li --c99 -D__MICROLIB -O3 --split_sections --diag_suppress=1 --diag_suppress=1295 -g -o .\build\OLED_HAL\.obj\__\Hardware\OLED_Data.o --no_depend_system_headers --depend .\build\OLED_HAL\.obj\__\Hardware\OLED_Data.d .\..\Hardware\OLED_Data.c
+   at unify_builder.Program.Main(String[] args_)
+---
+".\..\Hardware\OLED_Data.c", line 335: Error:  #20: identifier "ChineseCell_t" is undefined
+  const ChineseCell_t OLED_CF16x16[] = {
+        ^
+".\..\Hardware\OLED_Data.c", line 337: Error:  #8: missing closing quote
+  	"Ôº?",
+  	^
+".\..\Hardware\OLED_Data.c", line 338: Error:  #253: expected a ","
+  	0x00,
+  	^
+".\..\Hardware\OLED_Data.c", line 371: Error:  #8: missing closing quote
+  	"„Ä?",
+  	^
+".\..\Hardware\OLED_Data.c", line 372: Error:  #253: expected a ","
+  	0x00,
+  	^
+".\..\Hardware\OLED_Data.c", line 405: Error:  #8: missing closing quote
+  	"‰Ω?",
+  	^
+".\..\Hardware\OLED_Data.c", line 406: Error:  #253: expected a ","
+  	0x00,
+  	^
+".\..\Hardware\OLED_Data.c", line 439: Error:  #8: missing closing quote
+  	"Â•?",
+  	^
+".\..\Hardware\OLED_Data.c", line 440: Error:  #253: expected a ","
+  	0x10,
+  	^
+".\..\Hardware\OLED_Data.c", line 473: Error:  #8: missing closing quote
+  	"‰∏?",
+  	^
+".\..\Hardware\OLED_Data.c", line 474: Error:  #253: expected a ","
+  	0x20,
+  	^
+".\..\Hardware\OLED_Data.c", line 507: Error:  #8: missing closing quote
+  	"Áï?",
+  	^
+".\..\Hardware\OLED_Data.c", line 508: Error:  #253: expected a ","
+  	0x00,
+  	^
+.\..\Hardware\OLED_Data.c: 0 warnings, 13 errors
+
+[2024-05-11 21:44:46]	compilation failed at : "d:\ALLtheDATA\STM32F103C8T6\STM32_Modules_R\OLED_HAL\Hardware\OLED_Data.c", exit code: 1
+command: 
+  "D:\program\keil_5\ARM\ARMCC\bin\armcc.exe" -c --apcs=interwork -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I.cmsis/include -I../MDK-ARM/RTE/_OLED_HAL -I.eide/deps -I../Hardware -DUSE_HAL_DRIVER -DSTM32F103xB --cpu Cortex-M3 --li --c99 -D__MICROLIB -O3 --split_sections --diag_suppress=1 --diag_suppress=1295 -g -o .\build\OLED_HAL\.obj\__\Hardware\OLED_Data.o --no_depend_system_headers --depend .\build\OLED_HAL\.obj\__\Hardware\OLED_Data.d .\..\Hardware\OLED_Data.c
+   at unify_builder.Program.Main(String[] args_)
+---
+".\..\Hardware\OLED_Data.c", line 338: Error:  #8: missing closing quote
+  	"Ôº?",
+  	^
+".\..\Hardware\OLED_Data.c", line 339: Error:  #253: expected a ","
+  	0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,
+  	^
+".\..\Hardware\OLED_Data.c", line 342: Error:  #8: missing closing quote
+  	"„Ä?",
+  	^
+".\..\Hardware\OLED_Data.c", line 343: Error:  #253: expected a ","
+  	0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,
+  	^
+".\..\Hardware\OLED_Data.c", line 346: Error:  #8: missing closing quote
+  	"‰Ω?",
+  	^
+".\..\Hardware\OLED_Data.c", line 347: Error:  #253: expected a ","
+  	0x00,0x80,0x60,0xF8,0x07,0x40,0x20,0x18,0x0F,0x08,0xC8,0x08,0x08,0x28,0x18,0x00,
+  	^
+".\..\Hardware\OLED_Data.c", line 350: Error:  #8: missing closing quote
+  	"Â•?",
+  	^
+".\..\Hardware\OLED_Data.c", line 351: Error:  #253: expected a ","
+  	0x10,0x10,0xF0,0x1F,0x10,0xF0,0x00,0x80,0x82,0x82,0xE2,0x92,0x8A,0x86,0x80,0x00,
+  	^
+".\..\Hardware\OLED_Data.c", line 354: Error:  #8: missing closing quote
+  	"‰∏?",
+  	^
+".\..\Hardware\OLED_Data.c", line 355: Error:  #253: expected a ","
+  	0x20,0x20,0x20,0xFE,0x20,0x20,0xFF,0x20,0x20,0x20,0xFF,0x20,0x20,0x20,0x20,0x00,
+  	^
+".\..\Hardware\OLED_Data.c", line 358: Error:  #8: missing closing quote
+  	"Áï?",
+  	^
+".\..\Hardware\OLED_Data.c", line 359: Error:  #253: expected a ","
+  	0x00,0x00,0x00,0xFE,0x92,0x92,0x92,0xFE,0x92,0x92,0x92,0xFE,0x00,0x00,0x00,0x00,
+  	^
+".\..\Hardware\OLED_Data.c", line 367: Error:  #144: a value of type "char *" cannot be used to initialize an entity of type "uint8_t"
+  	"",		
+  	^
+.\..\Hardware\OLED_Data.c: 0 warnings, 13 errors
+
+[2024-05-11 21:47:50]	compilation failed at : "d:\ALLtheDATA\STM32F103C8T6\STM32_Modules_R\OLED_HAL\Hardware\OLED_Data.c", exit code: 1
+command: 
+  "D:\program\keil_5\ARM\ARMCC\bin\armcc.exe" -c --apcs=interwork -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I.cmsis/include -I../MDK-ARM/RTE/_OLED_HAL -I.eide/deps -I../Hardware -DUSE_HAL_DRIVER -DSTM32F103xB --cpu Cortex-M3 --li --c99 -D__MICROLIB -O3 --split_sections --diag_suppress=1 --diag_suppress=1295 -g -o .\build\OLED_HAL\.obj\__\Hardware\OLED_Data.o --no_depend_system_headers --depend .\build\OLED_HAL\.obj\__\Hardware\OLED_Data.d .\..\Hardware\OLED_Data.c
+   at unify_builder.Program.Main(String[] args_)
+---
+".\..\Hardware\OLED_Data.c", line 338: Error:  #8: missing closing quote
+  	"Ôº?",
+  	^
+".\..\Hardware\OLED_Data.c", line 339: Error:  #253: expected a ","
+  	0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,
+  	^
+".\..\Hardware\OLED_Data.c", line 342: Error:  #8: missing closing quote
+  	"„Ä?",
+  	^
+".\..\Hardware\OLED_Data.c", line 343: Error:  #253: expected a ","
+  	0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,
+  	^
+".\..\Hardware\OLED_Data.c", line 346: Error:  #8: missing closing quote
+  	"‰Ω?",
+  	^
+".\..\Hardware\OLED_Data.c", line 347: Error:  #253: expected a ","
+  	0x00,0x80,0x60,0xF8,0x07,0x40,0x20,0x18,0x0F,0x08,0xC8,0x08,0x08,0x28,0x18,0x00,
+  	^
+".\..\Hardware\OLED_Data.c", line 350: Error:  #8: missing closing quote
+  	"Â•?",
+  	^
+".\..\Hardware\OLED_Data.c", line 351: Error:  #253: expected a ","
+  	0x10,0x10,0xF0,0x1F,0x10,0xF0,0x00,0x80,0x82,0x82,0xE2,0x92,0x8A,0x86,0x80,0x00,
+  	^
+".\..\Hardware\OLED_Data.c", line 354: Error:  #8: missing closing quote
+  	"‰∏?",
+  	^
+".\..\Hardware\OLED_Data.c", line 355: Error:  #253: expected a ","
+  	0x20,0x20,0x20,0xFE,0x20,0x20,0xFF,0x20,0x20,0x20,0xFF,0x20,0x20,0x20,0x20,0x00,
+  	^
+".\..\Hardware\OLED_Data.c", line 358: Error:  #8: missing closing quote
+  	"Áï?",
+  	^
+".\..\Hardware\OLED_Data.c", line 359: Error:  #253: expected a ","
+  	0x00,0x00,0x00,0xFE,0x92,0x92,0x92,0xFE,0x92,0x92,0x92,0xFE,0x00,0x00,0x00,0x00,
+  	^
+".\..\Hardware\OLED_Data.c", line 367: Error:  #144: a value of type "char *" cannot be used to initialize an entity of type "uint8_t"
+  	"",		
+  	^
+.\..\Hardware\OLED_Data.c: 0 warnings, 13 errors
+
+[2024-05-11 21:48:23]	compilation failed at : "d:\ALLtheDATA\STM32F103C8T6\STM32_Modules_R\OLED_HAL\Hardware\OLED_Data.c", exit code: 1
+command: 
+  "D:\program\keil_5\ARM\ARMCC\bin\armcc.exe" -c --apcs=interwork -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I.cmsis/include -I../MDK-ARM/RTE/_OLED_HAL -I.eide/deps -I../Hardware -DUSE_HAL_DRIVER -DSTM32F103xB --cpu Cortex-M3 --li --c99 -D__MICROLIB -O3 --split_sections --diag_suppress=1 --diag_suppress=1295 -g -o .\build\OLED_HAL\.obj\__\Hardware\OLED_Data.o --no_depend_system_headers --depend .\build\OLED_HAL\.obj\__\Hardware\OLED_Data.d .\..\Hardware\OLED_Data.c
+   at unify_builder.Program.Main(String[] args_)
+---
+".\..\Hardware\OLED_Data.c", line 338: Error:  #8: missing closing quote
+  	"Ôº?",
+  	^
+".\..\Hardware\OLED_Data.c", line 339: Error:  #253: expected a ","
+  	0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,
+  	^
+".\..\Hardware\OLED_Data.c", line 342: Error:  #8: missing closing quote
+  	"„Ä?",
+  	^
+".\..\Hardware\OLED_Data.c", line 343: Error:  #253: expected a ","
+  	0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,
+  	^
+".\..\Hardware\OLED_Data.c", line 346: Error:  #8: missing closing quote
+  	"‰Ω?",
+  	^
+".\..\Hardware\OLED_Data.c", line 347: Error:  #253: expected a ","
+  	0x00,0x80,0x60,0xF8,0x07,0x40,0x20,0x18,0x0F,0x08,0xC8,0x08,0x08,0x28,0x18,0x00,
+  	^
+".\..\Hardware\OLED_Data.c", line 350: Error:  #8: missing closing quote
+  	"Â•?",
+  	^
+".\..\Hardware\OLED_Data.c", line 351: Error:  #253: expected a ","
+  	0x10,0x10,0xF0,0x1F,0x10,0xF0,0x00,0x80,0x82,0x82,0xE2,0x92,0x8A,0x86,0x80,0x00,
+  	^
+".\..\Hardware\OLED_Data.c", line 354: Error:  #8: missing closing quote
+  	"‰∏?",
+  	^
+".\..\Hardware\OLED_Data.c", line 355: Error:  #253: expected a ","
+  	0x20,0x20,0x20,0xFE,0x20,0x20,0xFF,0x20,0x20,0x20,0xFF,0x20,0x20,0x20,0x20,0x00,
+  	^
+".\..\Hardware\OLED_Data.c", line 358: Error:  #8: missing closing quote
+  	"Áï?",
+  	^
+".\..\Hardware\OLED_Data.c", line 359: Error:  #253: expected a ","
+  	0x00,0x00,0x00,0xFE,0x92,0x92,0x92,0xFE,0x92,0x92,0x92,0xFE,0x00,0x00,0x00,0x00,
+  	^
+".\..\Hardware\OLED_Data.c", line 367: Error:  #144: a value of type "char *" cannot be used to initialize an entity of type "uint8_t"
+  	"",		
+  	^
+.\..\Hardware\OLED_Data.c: 0 warnings, 13 errors
+
+[2024-05-11 21:55:05]	[done]
+	build successfully !
+
+[2024-05-11 22:08:47]	[done]
+	build successfully !
+
+[2024-05-11 22:12:19]	compilation failed at : "d:\ALLtheDATA\STM32F103C8T6\STM32_Modules_R\OLED_HAL\Hardware\OLED.c", exit code: 1
+command: 
+  "D:\program\keil_5\ARM\ARMCC\bin\armcc.exe" -c --apcs=interwork -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I.cmsis/include -I../MDK-ARM/RTE/_OLED_HAL -I.eide/deps -I../Hardware -DUSE_HAL_DRIVER -DSTM32F103xB --cpu Cortex-M3 --li --c99 -D__MICROLIB -O3 --split_sections --diag_suppress=1 --diag_suppress=1295 -g -o .\build\OLED_HAL\.obj\__\Hardware\OLED.o --no_depend_system_headers --depend .\build\OLED_HAL\.obj\__\Hardware\OLED.d .\..\Hardware\OLED.c
+   at unify_builder.Program.Main(String[] args_)
+---
+".\..\Hardware\OLED.c", line 33: Error:  #169: expected a declaration
+  if (x)
+  ^
+".\..\Hardware\OLED.c", line 35: Error:  #169: expected a declaration
+  else
+  ^
+".\..\Hardware\OLED.c", line 37: Error:  #169: expected a declaration
+  }
+  ^
+".\..\Hardware\OLED.c", line 44: Warning:  #12-D: parsing restarts here after previous syntax error
+  		HAL_GPIO_WritePin(
+DA_GPIO_Port, 
+DA_Pin, GPIO_PIN_SET);
+  		                                                       ^
+".\..\Hardware\OLED.c", line 45: Error:  #169: expected a declaration
+  	else
+  	^
+".\..\Hardware\OLED.c", line 47: Error:  #169: expected a declaration
+  }
+  ^
+".\..\Hardware\OLED.c", line 105: Warning:  #12-D: parsing restarts here after previous syntax error
+  	uint8_t OLED_DisplayBuf[8][128];
+  	                               ^
+".\..\Hardware\OLED.c", line 202: Error:  #112: expected "while"
+  void OLED_I2C_Stop(void)
+  ^
+".\..\Hardware\OLED.c", line 323: Warning:  #12-D: parsing restarts here after previous syntax error
+  }
+  ^
+".\..\Hardware\OLED.c", line 323: Error:  #125: expected a "("
+  }
+  ^
+".\..\Hardware\OLED.c", line 323: Error:  #29: expected an expression
+  }
+  ^
+".\..\Hardware\OLED.c", line 323: Error:  #18: expected a ")"
+  }
+  ^
+".\..\Hardware\OLED.c", line 323: Error:  #65: expected a ";"
+  }
+  ^
+".\..\Hardware\OLED.c", line 332: Error:  #112: expected "while"
+  void OLED_SetCursor(uint8_t Page, uint8_t X)
+  ^
+".\..\Hardware\OLED.c", line 486: Warning:  #12-D: parsing restarts here after previous syntax error
+  		}
+  		^
+".\..\Hardware\OLED.c", line 486: Error:  #125: expected a "("
+  		}
+  		^
+".\..\Hardware\OLED.c", line 486: Error:  #29: expected an expression
+  		}
+  		^
+".\..\Hardware\OLED.c", line 486: Error:  #18: expected a ")"
+  		}
+  		^
+".\..\Hardware\OLED.c", line 486: Error:  #65: expected a ";"
+  		}
+  		^
+".\..\Hardware\OLED.c", line 487: Error:  #112: expected "while"
+  	}
+  	^
+".\..\Hardware\OLED.c", line 487: Error:  #125: expected a "("
+  	}
+  	^
+".\..\Hardware\OLED.c", line 487: Error:  #29: expected an expression
+  	}
+  	^
+".\..\Hardware\OLED.c", line 487: Error:  #18: expected a ")"
+  	}
+  	^
+".\..\Hardware\OLED.c", line 487: Error:  #65: expected a ";"
+  	}
+  	^
+".\..\Hardware\OLED.c", line 488: Error:  #112: expected "while"
+  }
+  ^
+".\..\Hardware\OLED.c", line 488: Error:  #125: expected a "("
+  }
+  ^
+".\..\Hardware\OLED.c", line 488: Error:  #29: expected an expression
+  }
+  ^
+".\..\Hardware\OLED.c", line 488: Error:  #18: expected a ")"
+  }
+  ^
+".\..\Hardware\OLED.c", line 488: Error:  #65: expected a ";"
+  }
+  ^
+".\..\Hardware\OLED.c", line 503: Error:  #20: identifier "OLED_DisplayBuf" is undefined
+  			OLED_DisplayBuf[j][i] = 0x00; // Â∞?Êò?Â≠?Êï?Áª?Êï?Êç?ÂÖ?ÈÉ?Ê∏?Èõ?
+  			^
+".\..\Hardware\OLED.c", line 527: Error:  #20: identifier "OLED_DisplayBuf" is undefined
+  				OLED_DisplayBuf[j / 8][i] &= ~(0x01 << (j % 8)); // Â∞?Êò?Â≠?Êï?Áª?Êå?ÂÆ?Êï?Êç?Ê∏?Èõ?
+  				^
+".\..\Hardware\OLED.c", line 546: Error:  #20: identifier "OLED_DisplayBuf" is undefined
+  			OLED_DisplayBuf[j][i] ^= 0xFF; // Â∞?Êò?Â≠?Êï?Áª?Êï?Êç?ÂÖ?ÈÉ?Âè?Âè?
+  			^
+".\..\Hardware\OLED.c", line 570: Error:  #20: identifier "OLED_DisplayBuf" is undefined
+  				OLED_DisplayBuf[j / 8][i] ^= 0x01 << (j % 8); // Â∞?Êò?Â≠?Êï?Áª?Êå?ÂÆ?Êï?Êç?Âè?Âè?
+  				^
+".\..\Hardware\OLED.c", line 642: Warning:  #223-D: function "OLED_Pow" declared implicitly
+  		OLED_ShowChar(X + i * FontSize, Y, Number / OLED_Pow(10, Length - i - 1) % 10 + '0', FontSize);
+  		                                            ^
+".\..\Hardware\OLED.c", line 679: Warning:  #223-D: function "OLED_Pow" declared implicitly
+  		OLED_ShowChar(X + (i + 1) * FontSize, Y, Number1 / OLED_Pow(10, Length - i - 1) % 10 + '0', FontSize);
+  		                                                   ^
+".\..\Hardware\OLED.c", line 701: Warning:  #223-D: function "OLED_Pow" declared implicitly
+  		SingleNumber = Number / OLED_Pow(16, Length - i - 1) % 16;
+  		                        ^
+".\..\Hardware\OLED.c", line 738: Warning:  #223-D: function "OLED_Pow" declared implicitly
+  		OLED_ShowChar(X + i * FontSize, Y, Number / OLED_Pow(2, Length - i - 1) % 2 + '0', FontSize);
+  		                                            ^
+".\..\Hardware\OLED.c", line 772: Warning:  #223-D: function "OLED_Pow" declared implicitly
+  	PowNum = OLED_Pow(10, FraLength); // Ê†?Êç?Êå?ÂÆ?Â∞?Êï?Áö?‰Ω?Êï?Ôº?Á°?ÂÆ?‰π?Êï?
+  	         ^
+".\..\Hardware\OLED.c", line 869: Error:  #20: identifier "OLED_DisplayBuf" is undefined
+  					OLED_DisplayBuf[Page + j][X + i] |= Image[j * Width + i] << (Shift);
+  					^
+.\..\Hardware\OLED.c: 9 warnings, 30 errors
+
+[2024-05-11 22:12:42]	[done]
+	build successfully !
+
+[2024-05-11 22:16:10]	[done]
+	build successfully !
+
+[2024-05-11 22:16:26]	[done]
+	build successfully !
+
+[2024-05-11 22:16:40]	[done]
+	build successfully !
+
+[2024-05-11 22:18:13]	[done]
+	build successfully !
+
+[2024-05-11 22:18:16]	[done]
+	build successfully !
+
+[2024-05-11 22:18:55]	[done]
+	build successfully !
+
+[2024-05-11 22:19:27]	[done]
+	build successfully !
+
+[2024-05-11 22:20:34]	[done]
+	build successfully !
+

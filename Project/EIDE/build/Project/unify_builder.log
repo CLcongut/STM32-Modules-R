@@ -1,0 +1,218 @@
+[2024-05-11 19:41:48]	link failed !, exit code: 1
+   at unify_builder.Program.Main(String[] args_)
+---
+Error: L6406E: No space in execution regions with .ANY selector matching startup_stm32f103xb.o(STACK).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_hal_rcc.o(i.HAL_RCC_OscConfig).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_hal_rcc.o(i.HAL_RCC_ClockConfig).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_hal_rcc.o(i.HAL_RCC_GetSysClockFreq).
+Error: L6406E: No space in execution regions with .ANY selector matching main.o(i.SystemClock_Config).
+Error: L6406E: No space in execution regions with .ANY selector matching system_stm32f1xx.o(i.SystemInit).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_hal.o(i.HAL_InitTick).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_hal_cortex.o(i.HAL_NVIC_SetPriority).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_hal_msp.o(i.HAL_MspInit).
+Error: L6406E: No space in execution regions with .ANY selector matching gpio.o(i.MX_GPIO_Init).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_hal_cortex.o(i.HAL_SYSTICK_Config).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_hal.o(i.HAL_Init).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_hal_cortex.o(i.HAL_NVIC_SetPriorityGrouping).
+Error: L6406E: No space in execution regions with .ANY selector matching startup_stm32f103xb.o(.text).
+Error: L6406E: No space in execution regions with .ANY selector matching memseta.o(.text).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_hal_cortex.o(i.__NVIC_SetPriority).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_hal.o(i.HAL_IncTick).
+Error: L6406E: No space in execution regions with .ANY selector matching system_stm32f1xx.o(.constdata).
+Error: L6406E: No space in execution regions with .ANY selector matching main.o(i.main).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_hal.o(i.HAL_GetTick).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_hal.o(.data).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_it.o(i.SysTick_Handler).
+Error: L6406E: No space in execution regions with .ANY selector matching system_stm32f1xx.o(.data).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_it.o(i.BusFault_Handler).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_it.o(i.DebugMon_Handler).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_it.o(i.HardFault_Handler).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_it.o(i.MemManage_Handler).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_it.o(i.NMI_Handler).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_it.o(i.PendSV_Handler).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_it.o(i.SVC_Handler).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_it.o(i.UsageFault_Handler).
+Error: L6407E: Sections of aggregate size 0xb90 bytes could not fit into .ANY selector(s).
+Not enough information to list image symbols.
+Not enough information to list the image map.
+Finished: 2 information, 0 warning and 32 error messages.
+
+
+[2024-05-11 19:46:58]	link failed !, exit code: 1
+   at unify_builder.Program.Main(String[] args_)
+---
+Error: L6406E: No space in execution regions with .ANY selector matching startup_stm32f103xb.o(STACK).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_hal_rcc.o(i.HAL_RCC_OscConfig).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_hal_rcc.o(i.HAL_RCC_ClockConfig).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_hal_rcc.o(i.HAL_RCC_GetSysClockFreq).
+Error: L6406E: No space in execution regions with .ANY selector matching main.o(i.SystemClock_Config).
+Error: L6406E: No space in execution regions with .ANY selector matching system_stm32f1xx.o(i.SystemInit).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_hal.o(i.HAL_InitTick).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_hal_cortex.o(i.HAL_NVIC_SetPriority).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_hal_msp.o(i.HAL_MspInit).
+Error: L6406E: No space in execution regions with .ANY selector matching gpio.o(i.MX_GPIO_Init).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_hal_cortex.o(i.HAL_SYSTICK_Config).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_hal.o(i.HAL_Init).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_hal_cortex.o(i.HAL_NVIC_SetPriorityGrouping).
+Error: L6406E: No space in execution regions with .ANY selector matching startup_stm32f103xb.o(.text).
+Error: L6406E: No space in execution regions with .ANY selector matching memseta.o(.text).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_hal_cortex.o(i.__NVIC_SetPriority).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_hal.o(i.HAL_IncTick).
+Error: L6406E: No space in execution regions with .ANY selector matching system_stm32f1xx.o(.constdata).
+Error: L6406E: No space in execution regions with .ANY selector matching main.o(i.main).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_hal.o(i.HAL_GetTick).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_hal.o(.data).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_it.o(i.SysTick_Handler).
+Error: L6406E: No space in execution regions with .ANY selector matching system_stm32f1xx.o(.data).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_it.o(i.BusFault_Handler).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_it.o(i.DebugMon_Handler).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_it.o(i.HardFault_Handler).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_it.o(i.MemManage_Handler).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_it.o(i.NMI_Handler).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_it.o(i.PendSV_Handler).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_it.o(i.SVC_Handler).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_it.o(i.UsageFault_Handler).
+Error: L6407E: Sections of aggregate size 0xb90 bytes could not fit into .ANY selector(s).
+Not enough information to list image symbols.
+Not enough information to list the image map.
+Finished: 2 information, 0 warning and 32 error messages.
+
+
+[2024-05-11 19:47:03]	link failed !, exit code: 1
+   at unify_builder.Program.Main(String[] args_)
+---
+Error: L6406E: No space in execution regions with .ANY selector matching startup_stm32f103xb.o(STACK).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_hal_rcc.o(i.HAL_RCC_OscConfig).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_hal_rcc.o(i.HAL_RCC_ClockConfig).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_hal_rcc.o(i.HAL_RCC_GetSysClockFreq).
+Error: L6406E: No space in execution regions with .ANY selector matching main.o(i.SystemClock_Config).
+Error: L6406E: No space in execution regions with .ANY selector matching system_stm32f1xx.o(i.SystemInit).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_hal.o(i.HAL_InitTick).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_hal_cortex.o(i.HAL_NVIC_SetPriority).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_hal_msp.o(i.HAL_MspInit).
+Error: L6406E: No space in execution regions with .ANY selector matching gpio.o(i.MX_GPIO_Init).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_hal_cortex.o(i.HAL_SYSTICK_Config).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_hal.o(i.HAL_Init).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_hal_cortex.o(i.HAL_NVIC_SetPriorityGrouping).
+Error: L6406E: No space in execution regions with .ANY selector matching startup_stm32f103xb.o(.text).
+Error: L6406E: No space in execution regions with .ANY selector matching memseta.o(.text).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_hal_cortex.o(i.__NVIC_SetPriority).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_hal.o(i.HAL_IncTick).
+Error: L6406E: No space in execution regions with .ANY selector matching system_stm32f1xx.o(.constdata).
+Error: L6406E: No space in execution regions with .ANY selector matching main.o(i.main).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_hal.o(i.HAL_GetTick).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_hal.o(.data).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_it.o(i.SysTick_Handler).
+Error: L6406E: No space in execution regions with .ANY selector matching system_stm32f1xx.o(.data).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_it.o(i.BusFault_Handler).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_it.o(i.DebugMon_Handler).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_it.o(i.HardFault_Handler).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_it.o(i.MemManage_Handler).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_it.o(i.NMI_Handler).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_it.o(i.PendSV_Handler).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_it.o(i.SVC_Handler).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_it.o(i.UsageFault_Handler).
+Error: L6407E: Sections of aggregate size 0xb90 bytes could not fit into .ANY selector(s).
+Not enough information to list image symbols.
+Not enough information to list the image map.
+Finished: 2 information, 0 warning and 32 error messages.
+
+
+[2024-05-11 19:48:02]	link failed !, exit code: 1
+   at unify_builder.Program.Main(String[] args_)
+---
+Error: L6406E: No space in execution regions with .ANY selector matching startup_stm32f103xb.o(STACK).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_hal_rcc.o(i.HAL_RCC_OscConfig).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_hal_rcc.o(i.HAL_RCC_ClockConfig).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_hal_rcc.o(i.HAL_RCC_GetSysClockFreq).
+Error: L6406E: No space in execution regions with .ANY selector matching main.o(i.SystemClock_Config).
+Error: L6406E: No space in execution regions with .ANY selector matching system_stm32f1xx.o(i.SystemInit).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_hal.o(i.HAL_InitTick).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_hal_cortex.o(i.HAL_NVIC_SetPriority).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_hal_msp.o(i.HAL_MspInit).
+Error: L6406E: No space in execution regions with .ANY selector matching gpio.o(i.MX_GPIO_Init).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_hal_cortex.o(i.HAL_SYSTICK_Config).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_hal.o(i.HAL_Init).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_hal_cortex.o(i.HAL_NVIC_SetPriorityGrouping).
+Error: L6406E: No space in execution regions with .ANY selector matching startup_stm32f103xb.o(.text).
+Error: L6406E: No space in execution regions with .ANY selector matching memseta.o(.text).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_hal_cortex.o(i.__NVIC_SetPriority).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_hal.o(i.HAL_IncTick).
+Error: L6406E: No space in execution regions with .ANY selector matching system_stm32f1xx.o(.constdata).
+Error: L6406E: No space in execution regions with .ANY selector matching main.o(i.main).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_hal.o(i.HAL_GetTick).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_hal.o(.data).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_it.o(i.SysTick_Handler).
+Error: L6406E: No space in execution regions with .ANY selector matching system_stm32f1xx.o(.data).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_it.o(i.BusFault_Handler).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_it.o(i.DebugMon_Handler).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_it.o(i.HardFault_Handler).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_it.o(i.MemManage_Handler).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_it.o(i.NMI_Handler).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_it.o(i.PendSV_Handler).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_it.o(i.SVC_Handler).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_it.o(i.UsageFault_Handler).
+Error: L6407E: Sections of aggregate size 0xb90 bytes could not fit into .ANY selector(s).
+Not enough information to list image symbols.
+Not enough information to list the image map.
+Finished: 2 information, 0 warning and 32 error messages.
+
+
+[2024-05-11 19:48:11]	link failed !, exit code: 1
+   at unify_builder.Program.Main(String[] args_)
+---
+Error: L6406E: No space in execution regions with .ANY selector matching startup_stm32f103xb.o(STACK).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_hal_rcc.o(i.HAL_RCC_OscConfig).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_hal_rcc.o(i.HAL_RCC_ClockConfig).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_hal_rcc.o(i.HAL_RCC_GetSysClockFreq).
+Error: L6406E: No space in execution regions with .ANY selector matching main.o(i.SystemClock_Config).
+Error: L6406E: No space in execution regions with .ANY selector matching system_stm32f1xx.o(i.SystemInit).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_hal.o(i.HAL_InitTick).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_hal_cortex.o(i.HAL_NVIC_SetPriority).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_hal_msp.o(i.HAL_MspInit).
+Error: L6406E: No space in execution regions with .ANY selector matching gpio.o(i.MX_GPIO_Init).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_hal_cortex.o(i.HAL_SYSTICK_Config).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_hal.o(i.HAL_Init).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_hal_cortex.o(i.HAL_NVIC_SetPriorityGrouping).
+Error: L6406E: No space in execution regions with .ANY selector matching startup_stm32f103xb.o(.text).
+Error: L6406E: No space in execution regions with .ANY selector matching memseta.o(.text).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_hal_cortex.o(i.__NVIC_SetPriority).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_hal.o(i.HAL_IncTick).
+Error: L6406E: No space in execution regions with .ANY selector matching system_stm32f1xx.o(.constdata).
+Error: L6406E: No space in execution regions with .ANY selector matching main.o(i.main).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_hal.o(i.HAL_GetTick).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_hal.o(.data).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_it.o(i.SysTick_Handler).
+Error: L6406E: No space in execution regions with .ANY selector matching system_stm32f1xx.o(.data).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_it.o(i.BusFault_Handler).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_it.o(i.DebugMon_Handler).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_it.o(i.HardFault_Handler).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_it.o(i.MemManage_Handler).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_it.o(i.NMI_Handler).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_it.o(i.PendSV_Handler).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_it.o(i.SVC_Handler).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_it.o(i.UsageFault_Handler).
+Error: L6407E: Sections of aggregate size 0xb90 bytes could not fit into .ANY selector(s).
+Not enough information to list image symbols.
+Not enough information to list the image map.
+Finished: 2 information, 0 warning and 32 error messages.
+
+
+[2024-05-11 19:49:36]	[done]
+	build successfully !
+
+[2024-05-11 19:49:43]	[done]
+	build successfully !
+
+[2024-05-11 19:58:15]	[done]
+	build successfully !
+
+[2024-05-11 20:03:25]	[done]
+	build successfully !
+
+[2024-05-11 20:08:21]	[done]
+	build successfully !
+
+[2024-05-11 20:15:32]	[done]
+	build successfully !
+

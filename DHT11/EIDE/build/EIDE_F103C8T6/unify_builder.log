@@ -1,0 +1,116 @@
+[2024-05-12 13:37:47]	[done]
+	build successfully !
+
+[2024-05-12 13:41:21]	[done]
+	build successfully !
+
+[2024-05-12 13:45:42]	[done]
+	build successfully !
+
+[2024-05-12 13:47:41]	link failed !, exit code: 1
+   at unify_builder.Program.Main(String[] args_)
+---
+Error: L6218E: Undefined symbol OLED_F6x8 (referred from OLED.o).
+Error: L6218E: Undefined symbol OLED_F8x16 (referred from OLED.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 2 error messages.
+
+
+[2024-05-12 13:48:00]	[done]
+	build successfully !
+
+[2024-05-12 13:53:36]	compilation failed at : "d:\ALLtheDATA\STM32F103C8T6\STM32_Modules_R\DHT11\Src\main.c", exit code: 1
+command: 
+  "D:\program\keil_5\ARM\ARMCC\bin\armcc.exe" -c --apcs=interwork -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I.cmsis/include -I../MDK-ARM/RTE/_EIDE_F103C8T6 -I.eide/deps -DUSE_HAL_DRIVER -DSTM32F103xB --cpu Cortex-M3 --li --c99 -D__MICROLIB -O3 --split_sections --diag_suppress=1 --diag_suppress=1295 -g -o .\build\EIDE_F103C8T6\.obj\__\Src\main.o --no_depend_system_headers --depend .\build\EIDE_F103C8T6\.obj\__\Src\main.d .\..\Src\main.c
+   at unify_builder.Program.Main(String[] args_)
+---
+".\..\Src\main.c", line 95: Error:  #167: argument of type "const uint8_t (*)[16]" is incompatible with parameter of type "uint8_t"
+    OLED_ShowString(0, 0, "test", OLED_F8x16);
+                                  ^
+.\..\Src\main.c: 0 warnings, 1 error
+
+[2024-05-12 13:54:14]	compilation failed at : "d:\ALLtheDATA\STM32F103C8T6\STM32_Modules_R\DHT11\Src\main.c", exit code: 1
+command: 
+  "D:\program\keil_5\ARM\ARMCC\bin\armcc.exe" -c --apcs=interwork -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I.cmsis/include -I../MDK-ARM/RTE/_EIDE_F103C8T6 -I.eide/deps -DUSE_HAL_DRIVER -DSTM32F103xB --cpu Cortex-M3 --li --c99 -D__MICROLIB -O3 --split_sections --diag_suppress=1 --diag_suppress=1295 -g -o .\build\EIDE_F103C8T6\.obj\__\Src\main.o --no_depend_system_headers --depend .\build\EIDE_F103C8T6\.obj\__\Src\main.d .\..\Src\main.c
+   at unify_builder.Program.Main(String[] args_)
+---
+".\..\Src\main.c", line 95: Error:  #167: argument of type "const uint8_t (*)[16]" is incompatible with parameter of type "uint8_t"
+    OLED_ShowString(1, 1, "test", OLED_F8x16);
+                                  ^
+.\..\Src\main.c: 0 warnings, 1 error
+
+[2024-05-12 13:54:52]	compilation failed at : "d:\ALLtheDATA\STM32F103C8T6\STM32_Modules_R\DHT11\Src\main.c", exit code: 1
+command: 
+  "D:\program\keil_5\ARM\ARMCC\bin\armcc.exe" -c --apcs=interwork -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I.cmsis/include -I../MDK-ARM/RTE/_EIDE_F103C8T6 -I.eide/deps -DUSE_HAL_DRIVER -DSTM32F103xB --cpu Cortex-M3 --li --c99 -D__MICROLIB -O3 --split_sections --diag_suppress=1 --diag_suppress=1295 -g -o .\build\EIDE_F103C8T6\.obj\__\Src\main.o --no_depend_system_headers --depend .\build\EIDE_F103C8T6\.obj\__\Src\main.d .\..\Src\main.c
+   at unify_builder.Program.Main(String[] args_)
+---
+".\..\Src\main.c", line 95: Error:  #20: identifier "OLED_8x16" is undefined
+    OLED_ShowString(0, 0, "test", OLED_8x16);
+                                  ^
+.\..\Src\main.c: 0 warnings, 1 error
+
+[2024-05-12 13:55:09]	[done]
+	build successfully !
+
+[2024-05-12 13:55:38]	[done]
+	build successfully !
+
+[2024-05-12 13:56:05]	[done]
+	build successfully !
+
+[2024-05-12 13:56:19]	[done]
+	build successfully !
+
+[2024-05-12 14:04:17]	[done]
+	build successfully !
+
+[2024-05-12 14:04:51]	[done]
+	build successfully !
+
+[2024-05-12 14:05:25]	[done]
+	build successfully !
+
+[2024-05-12 14:06:19]	compilation failed at : "d:\ALLtheDATA\STM32F103C8T6\STM32_Modules_R\DHT11\Src\main.c", exit code: 1
+command: 
+  "D:\program\keil_5\ARM\ARMCC\bin\armcc.exe" -c --apcs=interwork -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I.cmsis/include -I../MDK-ARM/RTE/_EIDE_F103C8T6 -I.eide/deps -DUSE_HAL_DRIVER -DSTM32F103xB --cpu Cortex-M3 --li --c99 -D__MICROLIB -O3 --split_sections --diag_suppress=1 --diag_suppress=1295 -g -o .\build\EIDE_F103C8T6\.obj\__\Src\main.o --no_depend_system_headers --depend .\build\EIDE_F103C8T6\.obj\__\Src\main.d .\..\Src\main.c
+   at unify_builder.Program.Main(String[] args_)
+---
+".\..\Src\main.c", line 97: Error:  #167: argument of type "const uint8_t (*)[16]" is incompatible with parameter of type "uint8_t"
+    OLED_ShowChar(40, 0, '.', OLED_F8x16);
+                              ^
+.\..\Src\main.c: 0 warnings, 1 error
+
+[2024-05-12 14:06:26]	[done]
+	build successfully !
+
+[2024-05-12 14:06:40]	[done]
+	build successfully !
+
+[2024-05-12 14:06:49]	[done]
+	build successfully !
+
+[2024-05-12 14:07:06]	[done]
+	build successfully !
+
+[2024-05-12 14:07:39]	[done]
+	build successfully !
+
+[2024-05-12 14:07:53]	[done]
+	build successfully !
+
+[2024-05-12 14:08:32]	[done]
+	build successfully !
+
+[2024-05-12 14:15:36]	compilation failed at : "d:\ALLtheDATA\STM32F103C8T6\STM32_Modules_R\DHT11\Src\DHT11.c", exit code: 1
+command: 
+  "D:\program\keil_5\ARM\ARMCC\bin\armcc.exe" -c --apcs=interwork -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I.cmsis/include -I../MDK-ARM/RTE/_EIDE_F103C8T6 -I.eide/deps -DUSE_HAL_DRIVER -DSTM32F103xB --cpu Cortex-M3 --li --c99 -D__MICROLIB -O3 --split_sections --diag_suppress=1 --diag_suppress=1295 -g -o .\build\EIDE_F103C8T6\.obj\__\Src\DHT11.o --no_depend_system_headers --depend .\build\EIDE_F103C8T6\.obj\__\Src\DHT11.d .\..\Src\DHT11.c
+   at unify_builder.Program.Main(String[] args_)
+---
+".\..\Src\DHT11.c", line 106: Error:  #147-D: declaration is incompatible with "uint8_t DHT_Read(void)" (declared at line 5 of "../Inc/DHT11.h")
+  uint8_t DHT_Read(uint8_t *buf)
+          ^
+.\..\Src\DHT11.c: 0 warnings, 1 error
+
+[2024-05-12 14:15:54]	[done]
+	build successfully !
+

@@ -1,0 +1,184 @@
+[2024-05-12 19:56:09]	[done]
+	build successfully !
+
+[2024-05-12 20:39:17]	compilation failed at : "d:\ALLtheDATA\STM32F103C8T6\STM32_Modules_R\Step_Motor\Src\StepMotor.c", exit code: 1
+command: 
+  "D:\program\keil_5\ARM\ARMCC\bin\armcc.exe" -c --apcs=interwork -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I.cmsis/include -I../MDK-ARM/RTE/_EIDE_F103C8T6 -I.eide/deps -DUSE_HAL_DRIVER -DSTM32F103xB --cpu Cortex-M3 --li --c99 -D__MICROLIB -O3 --split_sections --diag_suppress=1 --diag_suppress=1295 -g -o .\build\EIDE_F103C8T6\.obj\__\Src\StepMotor.o --no_depend_system_headers --depend .\build\EIDE_F103C8T6\.obj\__\Src\StepMotor.d .\..\Src\StepMotor.c
+   at unify_builder.Program.Main(String[] args_)
+---
+".\..\Src\StepMotor.c", line 19: Error:  #20: identifier "LA" is undefined
+          LA = (uint8_t)((temp & PLA) >> 0);
+          ^
+".\..\Src\StepMotor.c", line 20: Error:  #20: identifier "LB" is undefined
+          LB = (uint8_t)((temp & PLB) >> 1);
+          ^
+".\..\Src\StepMotor.c", line 21: Error:  #20: identifier "LC" is undefined
+          LC = (uint8_t)((temp & PLC) >> 2);
+          ^
+".\..\Src\StepMotor.c", line 22: Error:  #20: identifier "LD" is undefined
+          LD = (uint8_t)((temp & PLD) >> 3);
+          ^
+".\..\Src\StepMotor.c", line 24: Warning:  #223-D: function "delay_us" declared implicitly
+          delay_us(nus);
+          ^
+".\..\Src\StepMotor.c", line 40: Error:  #20: identifier "LA" is undefined
+          LA = (uint8_t)((steps[i - 1] & PLA) >> 0);
+          ^
+".\..\Src\StepMotor.c", line 41: Error:  #20: identifier "LB" is undefined
+          LB = (uint8_t)((steps[i - 1] & PLB) >> 1);
+          ^
+".\..\Src\StepMotor.c", line 42: Error:  #20: identifier "LC" is undefined
+          LC = (uint8_t)((steps[i - 1] & PLC) >> 2);
+          ^
+".\..\Src\StepMotor.c", line 43: Error:  #20: identifier "LD" is undefined
+          LD = (uint8_t)((steps[i - 1] & PLD) >> 3);
+          ^
+".\..\Src\StepMotor.c", line 45: Warning:  #223-D: function "delay_us" declared implicitly
+          delay_us(nus);
+          ^
+".\..\Src\StepMotor.c", line 58: Error:  #20: identifier "LA" is undefined
+      LA = 0;
+      ^
+".\..\Src\StepMotor.c", line 59: Error:  #20: identifier "LB" is undefined
+      LB = 0;
+      ^
+".\..\Src\StepMotor.c", line 60: Error:  #20: identifier "LC" is undefined
+      LC = 0;
+      ^
+".\..\Src\StepMotor.c", line 61: Error:  #20: identifier "LD" is undefined
+      LD = 0;
+      ^
+.\..\Src\StepMotor.c: 2 warnings, 12 errors
+
+[2024-05-12 20:49:15]	compilation failed at : "d:\ALLtheDATA\STM32F103C8T6\STM32_Modules_R\Step_Motor\Src\StepMotor.c", exit code: 1
+command: 
+  "D:\program\keil_5\ARM\ARMCC\bin\armcc.exe" -c --apcs=interwork -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I.cmsis/include -I../MDK-ARM/RTE/_EIDE_F103C8T6 -I.eide/deps -DUSE_HAL_DRIVER -DSTM32F103xB --cpu Cortex-M3 --li --c99 -D__MICROLIB -O3 --split_sections --diag_suppress=1 --diag_suppress=1295 -g -o .\build\EIDE_F103C8T6\.obj\__\Src\StepMotor.o --no_depend_system_headers --depend .\build\EIDE_F103C8T6\.obj\__\Src\StepMotor.d .\..\Src\StepMotor.c
+   at unify_builder.Program.Main(String[] args_)
+---
+".\..\Src\StepMotor.c", line 39: Warning:  #223-D: function "BIT_ADDR" declared implicitly
+          
+A = (uint8_t)((temp & PLA) >> 0);
+          ^
+".\..\Src\StepMotor.c", line 39: Error:  #20: identifier "GPIOB_ODR_Addr" is undefined
+          
+A = (uint8_t)((temp & PLA) >> 0);
+          ^
+".\..\Src\StepMotor.c", line 39: Error:  #137: expression must be a modifiable lvalue
+          
+A = (uint8_t)((temp & PLA) >> 0);
+          ^
+".\..\Src\StepMotor.c", line 40: Error:  #137: expression must be a modifiable lvalue
+          
+B = (uint8_t)((temp & PLB) >> 1);
+          ^
+".\..\Src\StepMotor.c", line 41: Error:  #137: expression must be a modifiable lvalue
+          
+C = (uint8_t)((temp & PLC) >> 2);
+          ^
+".\..\Src\StepMotor.c", line 42: Error:  #137: expression must be a modifiable lvalue
+          
+D = (uint8_t)((temp & PLD) >> 3);
+          ^
+".\..\Src\StepMotor.c", line 44: Warning:  #223-D: function "delay_us" declared implicitly
+          delay_us(nus);
+          ^
+".\..\Src\StepMotor.c", line 60: Warning:  #223-D: function "BIT_ADDR" declared implicitly
+          
+A = (uint8_t)((steps[i - 1] & PLA) >> 0);
+          ^
+".\..\Src\StepMotor.c", line 60: Error:  #20: identifier "GPIOB_ODR_Addr" is undefined
+          
+A = (uint8_t)((steps[i - 1] & PLA) >> 0);
+          ^
+".\..\Src\StepMotor.c", line 60: Error:  #137: expression must be a modifiable lvalue
+          
+A = (uint8_t)((steps[i - 1] & PLA) >> 0);
+          ^
+".\..\Src\StepMotor.c", line 61: Error:  #137: expression must be a modifiable lvalue
+          
+B = (uint8_t)((steps[i - 1] & PLB) >> 1);
+          ^
+".\..\Src\StepMotor.c", line 62: Error:  #137: expression must be a modifiable lvalue
+          
+C = (uint8_t)((steps[i - 1] & PLC) >> 2);
+          ^
+".\..\Src\StepMotor.c", line 63: Error:  #137: expression must be a modifiable lvalue
+          
+D = (uint8_t)((steps[i - 1] & PLD) >> 3);
+          ^
+".\..\Src\StepMotor.c", line 65: Warning:  #223-D: function "delay_us" declared implicitly
+          delay_us(nus);
+          ^
+".\..\Src\StepMotor.c", line 78: Warning:  #223-D: function "BIT_ADDR" declared implicitly
+      
+A = 0;
+      ^
+".\..\Src\StepMotor.c", line 78: Error:  #20: identifier "GPIOB_ODR_Addr" is undefined
+      
+A = 0;
+      ^
+".\..\Src\StepMotor.c", line 78: Error:  #137: expression must be a modifiable lvalue
+      
+A = 0;
+      ^
+".\..\Src\StepMotor.c", line 79: Error:  #137: expression must be a modifiable lvalue
+      
+B = 0;
+      ^
+".\..\Src\StepMotor.c", line 80: Error:  #137: expression must be a modifiable lvalue
+      
+C = 0;
+      ^
+".\..\Src\StepMotor.c", line 81: Error:  #137: expression must be a modifiable lvalue
+      
+D = 0;
+      ^
+.\..\Src\StepMotor.c: 5 warnings, 15 errors
+
+[2024-05-12 20:50:35]	link failed !, exit code: 1
+   at unify_builder.Program.Main(String[] args_)
+---
+Error: L6218E: Undefined symbol delay_us (referred from StepMotor.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 1 error messages.
+
+
+[2024-05-12 20:51:57]	[done]
+	build successfully !
+
+[2024-05-12 20:52:05]	[done]
+	build successfully !
+
+[2024-05-12 20:56:02]	[done]
+	build successfully !
+
+[2024-05-12 20:56:14]	[done]
+	build successfully !
+
+[2024-05-12 20:56:27]	[done]
+	build successfully !
+
+[2024-05-12 20:56:39]	[done]
+	build successfully !
+
+[2024-05-12 20:56:50]	[done]
+	build successfully !
+
+[2024-05-12 20:57:34]	[done]
+	build successfully !
+
+[2024-05-12 20:57:42]	[done]
+	build successfully !
+
+[2024-05-12 20:58:00]	[done]
+	build successfully !
+
+[2024-05-12 20:58:08]	[done]
+	build successfully !
+
+[2024-05-12 20:58:16]	[done]
+	build successfully !
+
+[2024-05-12 20:58:25]	[done]
+	build successfully !
+
