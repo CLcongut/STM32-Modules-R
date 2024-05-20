@@ -255,7 +255,7 @@ void USART1_IRQHandler(void)
   /* USER CODE END USART1_IRQn 0 */
   HAL_UART_IRQHandler(&huart1);
   /* USER CODE BEGIN USART1_IRQn 1 */
-
+  HAL_UARTEx_ReceiveToIdle_DMA(&huart1, USART1_RX_BUF, USART_REC_LEN);
   /* USER CODE END USART1_IRQn 1 */
 }
 
@@ -264,21 +264,21 @@ void HAL_UARTEx_RxEventCallback(UART_HandleTypeDef *huart, uint16_t Size)
 {
   uint8_t data_len;
   // uint8_t rx_buf_data[25];
-  // uint8_t data[25];
+  // uint8_t data[USART_REC_LEN];
   if (huart->Instance == USART1)
   {
     HAL_UART_DMAStop(huart);
     data_len = USART_REC_LEN - __HAL_DMA_GET_COUNTER(&hdma_usart1_rx);
-    // if (USART1_RX_BUF[0] == 0x0F && len == 25)
-    // {
-    memcpy(RX_DS.rx_data, USART1_RX_BUF, data_len + 1);
-    // LCD_Fill(0, 20, 32, 32, WHITE);
-    // LCD_ShowString(0, 20, "cccc", BLACK, WHITE, 12, 0);
-    // sscanf((const char *)USART1_RX_BUF, "%*[^\r\n]%s\r\n", data);
-    // update_sbus(USART1_RX_BUF, data_len);
-    // }
+    if (USART1_RX_BUF[0]) // A:0x41, W:0x57
+    {
+      memcpy(RX_DS.rx_data, USART1_RX_BUF, data_len);
+      LCD_Fill(0, 20, 128, 32, WHITE);
+      LCD_ShowString(0, 20, RX_DS.rx_data, BLACK, WHITE, 12, 0);
+      // sscanf((const char *)USART1_RX_BUF, "%*[^\r\n]%s\r\n", data);
+      // update_sbus(USART1_RX_BUF, data_len);
+    }
     
-    HAL_UARTEx_ReceiveToIdle_DMA(&huart1, USART1_RX_BUF, USART_REC_LEN);
+    
   }
 }
 

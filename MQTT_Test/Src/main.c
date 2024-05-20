@@ -96,7 +96,7 @@ int main(void)
   MX_USART1_UART_Init();
   MX_SPI1_Init();
   /* USER CODE BEGIN 2 */
-
+  __HAL_UART_DISABLE_IT(&huart1, UART_IT_RXNE);
   /* USER CODE END 2 */
 
   /* Infinite loop */
