@@ -1433,3 +1433,303 @@ tandard_Delay;
 [2024-05-20 17:40:04]	[done]
 	build successfully !
 
+[2024-05-20 20:32:14]	compilation failed at : "d:\ALLtheDATA\STM32F103C8T6\STM32_Modules_R\MQTT_Test\Src\ESP01S.c", exit code: 1
+command: 
+  "D:\program\keil_5\ARM\ARMCC\bin\armcc.exe" -c --apcs=interwork -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I.cmsis/include -I../MDK-ARM/RTE/_EIDE_F103C8T6 -I.eide/deps -DUSE_HAL_DRIVER -DSTM32F103xB --cpu Cortex-M3 --li --c99 -D__MICROLIB -O3 --split_sections --diag_suppress=1 --diag_suppress=1295 -g -o .\build\EIDE_F103C8T6\.obj\__\Src\ESP01S.o --no_depend_system_headers --depend .\build\EIDE_F103C8T6\.obj\__\Src\ESP01S.d .\..\Src\ESP01S.c
+   at unify_builder.Program.Main(String[] args_)
+---
+".\..\Src\ESP01S.c", line 82: Warning:  #181-D: argument is incompatible with corresponding format string conversion
+              sscanf((const char *)data_rx, "%*[^,]%1d,", &data);
+                                                          ^
+".\..\Src\ESP01S.c", line 86: Error:  #140: too many arguments in function call
+                  gui_dp_info("%d", data);
+                                    ^
+".\..\Src\ESP01S.c", line 92: Error:  #140: too many arguments in function call
+                  gui_dp_info("%d", data);
+                                    ^
+.\..\Src\ESP01S.c: 1 warning, 2 errors
+
+[2024-05-20 20:32:36]	compilation failed at : "d:\ALLtheDATA\STM32F103C8T6\STM32_Modules_R\MQTT_Test\Src\ESP01S.c", exit code: 1
+command: 
+  "D:\program\keil_5\ARM\ARMCC\bin\armcc.exe" -c --apcs=interwork -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I.cmsis/include -I../MDK-ARM/RTE/_EIDE_F103C8T6 -I.eide/deps -DUSE_HAL_DRIVER -DSTM32F103xB --cpu Cortex-M3 --li --c99 -D__MICROLIB -O3 --split_sections --diag_suppress=1 --diag_suppress=1295 -g -o .\build\EIDE_F103C8T6\.obj\__\Src\ESP01S.o --no_depend_system_headers --depend .\build\EIDE_F103C8T6\.obj\__\Src\ESP01S.d .\..\Src\ESP01S.c
+   at unify_builder.Program.Main(String[] args_)
+---
+".\..\Src\ESP01S.c", line 82: Warning:  #181-D: argument is incompatible with corresponding format string conversion
+              sscanf((const char *)data_rx, "%*[^,]%d,", &data);
+                                                         ^
+".\..\Src\ESP01S.c", line 86: Error:  #140: too many arguments in function call
+                  gui_dp_info("%d", data);
+                                    ^
+".\..\Src\ESP01S.c", line 92: Error:  #140: too many arguments in function call
+                  gui_dp_info("%d", data);
+                                    ^
+.\..\Src\ESP01S.c: 1 warning, 2 errors
+
+[2024-05-20 20:32:54]	compilation failed at : "d:\ALLtheDATA\STM32F103C8T6\STM32_Modules_R\MQTT_Test\Src\ESP01S.c", exit code: 1
+command: 
+  "D:\program\keil_5\ARM\ARMCC\bin\armcc.exe" -c --apcs=interwork -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I.cmsis/include -I../MDK-ARM/RTE/_EIDE_F103C8T6 -I.eide/deps -DUSE_HAL_DRIVER -DSTM32F103xB --cpu Cortex-M3 --li --c99 -D__MICROLIB -O3 --split_sections --diag_suppress=1 --diag_suppress=1295 -g -o .\build\EIDE_F103C8T6\.obj\__\Src\ESP01S.o --no_depend_system_headers --depend .\build\EIDE_F103C8T6\.obj\__\Src\ESP01S.d .\..\Src\ESP01S.c
+   at unify_builder.Program.Main(String[] args_)
+---
+".\..\Src\ESP01S.c", line 82: Warning:  #181-D: argument is incompatible with corresponding format string conversion
+              sscanf((const char *)data_rx, "%*[^,]%1d,", &data);
+                                                          ^
+".\..\Src\ESP01S.c", line 86: Error:  #140: too many arguments in function call
+                  gui_dp_info("%d", data);
+                                    ^
+".\..\Src\ESP01S.c", line 92: Error:  #140: too many arguments in function call
+                  gui_dp_info("%d", data);
+                                    ^
+.\..\Src\ESP01S.c: 1 warning, 2 errors
+
+[2024-05-20 20:33:28]	compilation failed at : "d:\ALLtheDATA\STM32F103C8T6\STM32_Modules_R\MQTT_Test\Src\ESP01S.c", exit code: 1
+command: 
+  "D:\program\keil_5\ARM\ARMCC\bin\armcc.exe" -c --apcs=interwork -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I.cmsis/include -I../MDK-ARM/RTE/_EIDE_F103C8T6 -I.eide/deps -DUSE_HAL_DRIVER -DSTM32F103xB --cpu Cortex-M3 --li --c99 -D__MICROLIB -O3 --split_sections --diag_suppress=1 --diag_suppress=1295 -g -o .\build\EIDE_F103C8T6\.obj\__\Src\ESP01S.o --no_depend_system_headers --depend .\build\EIDE_F103C8T6\.obj\__\Src\ESP01S.d .\..\Src\ESP01S.c
+   at unify_builder.Program.Main(String[] args_)
+---
+".\..\Src\ESP01S.c", line 82: Warning:  #181-D: argument is incompatible with corresponding format string conversion
+              sscanf((const char *)data_rx, "%*[^,]%1d,", &data);
+                                                          ^
+".\..\Src\ESP01S.c", line 86: Error:  #167: argument of type "uint8_t" is incompatible with parameter of type "const uint8_t *"
+                  gui_dp_info(data);
+                              ^
+".\..\Src\ESP01S.c", line 92: Error:  #167: argument of type "uint8_t" is incompatible with parameter of type "const uint8_t *"
+                  gui_dp_info(data);
+                              ^
+.\..\Src\ESP01S.c: 1 warning, 2 errors
+
+[2024-05-20 20:34:39]	compilation failed at : "d:\ALLtheDATA\STM32F103C8T6\STM32_Modules_R\MQTT_Test\Src\ESP01S.c", exit code: 1
+command: 
+  "D:\program\keil_5\ARM\ARMCC\bin\armcc.exe" -c --apcs=interwork -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I.cmsis/include -I../MDK-ARM/RTE/_EIDE_F103C8T6 -I.eide/deps -DUSE_HAL_DRIVER -DSTM32F103xB --cpu Cortex-M3 --li --c99 -D__MICROLIB -O3 --split_sections --diag_suppress=1 --diag_suppress=1295 -g -o .\build\EIDE_F103C8T6\.obj\__\Src\ESP01S.o --no_depend_system_headers --depend .\build\EIDE_F103C8T6\.obj\__\Src\ESP01S.d .\..\Src\ESP01S.c
+   at unify_builder.Program.Main(String[] args_)
+---
+".\..\Src\ESP01S.c", line 82: Warning:  #181-D: argument is incompatible with corresponding format string conversion
+              sscanf((const char *)data_rx, "%*[^,]%1d,", &data);
+                                                          ^
+".\..\Src\ESP01S.c", line 86: Error:  #140: too many arguments in function call
+                  LCD_ShowIntNum(0, 0, data, 1, 
+LACK, 
+HITE, 12, 0);
+                                                                  ^
+".\..\Src\ESP01S.c", line 92: Error:  #140: too many arguments in function call
+                  LCD_ShowIntNum(0, 0, data, 1, 
+LACK, 
+HITE, 12, 0);
+                                                                  ^
+.\..\Src\ESP01S.c: 1 warning, 2 errors
+
+[2024-05-20 20:35:08]	compilation failed at : "d:\ALLtheDATA\STM32F103C8T6\STM32_Modules_R\MQTT_Test\Src\ESP01S.c", exit code: 1
+command: 
+  "D:\program\keil_5\ARM\ARMCC\bin\armcc.exe" -c --apcs=interwork -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I.cmsis/include -I../MDK-ARM/RTE/_EIDE_F103C8T6 -I.eide/deps -DUSE_HAL_DRIVER -DSTM32F103xB --cpu Cortex-M3 --li --c99 -D__MICROLIB -O3 --split_sections --diag_suppress=1 --diag_suppress=1295 -g -o .\build\EIDE_F103C8T6\.obj\__\Src\ESP01S.o --no_depend_system_headers --depend .\build\EIDE_F103C8T6\.obj\__\Src\ESP01S.d .\..\Src\ESP01S.c
+   at unify_builder.Program.Main(String[] args_)
+---
+".\..\Src\ESP01S.c", line 86: Error:  #140: too many arguments in function call
+                  LCD_ShowIntNum(0, 0, data, 1, 
+LACK, 
+HITE, 12, 0);
+                                                                  ^
+".\..\Src\ESP01S.c", line 92: Error:  #140: too many arguments in function call
+                  LCD_ShowIntNum(0, 0, data, 1, 
+LACK, 
+HITE, 12, 0);
+                                                                  ^
+.\..\Src\ESP01S.c: 0 warnings, 2 errors
+
+[2024-05-20 20:35:35]	compilation failed at : "d:\ALLtheDATA\STM32F103C8T6\STM32_Modules_R\MQTT_Test\Src\ESP01S.c", exit code: 1
+command: 
+  "D:\program\keil_5\ARM\ARMCC\bin\armcc.exe" -c --apcs=interwork -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I.cmsis/include -I../MDK-ARM/RTE/_EIDE_F103C8T6 -I.eide/deps -DUSE_HAL_DRIVER -DSTM32F103xB --cpu Cortex-M3 --li --c99 -D__MICROLIB -O3 --split_sections --diag_suppress=1 --diag_suppress=1295 -g -o .\build\EIDE_F103C8T6\.obj\__\Src\ESP01S.o --no_depend_system_headers --depend .\build\EIDE_F103C8T6\.obj\__\Src\ESP01S.d .\..\Src\ESP01S.c
+   at unify_builder.Program.Main(String[] args_)
+---
+".\..\Src\ESP01S.c", line 87: Error:  #140: too many arguments in function call
+                  LCD_ShowIntNum(0, 0, data, 1, 
+LACK, 
+HITE, 12, 0);
+                                                                  ^
+".\..\Src\ESP01S.c", line 94: Error:  #140: too many arguments in function call
+                  LCD_ShowIntNum(0, 0, data, 1, 
+LACK, 
+HITE, 12, 0);
+                                                                  ^
+.\..\Src\ESP01S.c: 0 warnings, 2 errors
+
+[2024-05-20 20:35:54]	[done]
+	build successfully !
+
+[2024-05-20 20:38:40]	[done]
+	build successfully !
+
+[2024-05-20 20:39:59]	[done]
+	build successfully !
+
+[2024-05-20 20:40:03]	[done]
+	build successfully !
+
+[2024-05-20 20:44:25]	[done]
+	build successfully !
+
+[2024-05-20 20:47:58]	[done]
+	build successfully !
+
+[2024-05-20 20:50:33]	[done]
+	build successfully !
+
+[2024-05-20 20:51:18]	[done]
+	build successfully !
+
+[2024-05-20 20:53:00]	[done]
+	build successfully !
+
+[2024-05-20 20:53:56]	[done]
+	build successfully !
+
+[2024-05-20 20:54:55]	[done]
+	build successfully !
+
+[2024-05-20 20:56:06]	[done]
+	build successfully !
+
+[2024-05-20 20:57:13]	[done]
+	build successfully !
+
+[2024-05-20 21:00:41]	[done]
+	build successfully !
+
+[2024-05-20 21:00:56]	[done]
+	build successfully !
+
+[2024-05-20 21:02:00]	[done]
+	build successfully !
+
+[2024-05-20 21:03:42]	[done]
+	build successfully !
+
+[2024-05-20 21:04:22]	[done]
+	build successfully !
+
+[2024-05-20 21:05:05]	[done]
+	build successfully !
+
+[2024-05-20 21:05:48]	[done]
+	build successfully !
+
+[2024-05-20 21:08:55]	[done]
+	build successfully !
+
+[2024-05-20 21:10:13]	compilation failed at : "d:\ALLtheDATA\STM32F103C8T6\STM32_Modules_R\MQTT_Test\Src\ESP01S.c", exit code: 1
+command: 
+  "D:\program\keil_5\ARM\ARMCC\bin\armcc.exe" -c --apcs=interwork -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I.cmsis/include -I../MDK-ARM/RTE/_EIDE_F103C8T6 -I.eide/deps -DUSE_HAL_DRIVER -DSTM32F103xB --cpu Cortex-M3 --li --c99 -D__MICROLIB -O3 --split_sections --diag_suppress=1 --diag_suppress=1295 -g -o .\build\EIDE_F103C8T6\.obj\__\Src\ESP01S.o --no_depend_system_headers --depend .\build\EIDE_F103C8T6\.obj\__\Src\ESP01S.d .\..\Src\ESP01S.c
+   at unify_builder.Program.Main(String[] args_)
+---
+".\..\Src\ESP01S.c", line 121: Error:  #167: argument of type "uint8_t" is incompatible with parameter of type "const uint8_t *"
+                  LCD_ShowString(0, 40, data_rx[0], 
+LACK, 
+HITE, 12, 0);
+                                        ^
+".\..\Src\ESP01S.c", line 129: Error:  #167: argument of type "uint8_t" is incompatible with parameter of type "const uint8_t *"
+                  LCD_ShowString(0, 40, data_rx[0], 
+LACK, 
+HITE, 12, 0);
+                                        ^
+.\..\Src\ESP01S.c: 0 warnings, 2 errors
+
+[2024-05-20 21:11:03]	[done]
+	build successfully !
+
+[2024-05-20 21:11:57]	[done]
+	build successfully !
+
+[2024-05-20 21:13:05]	[done]
+	build successfully !
+
+[2024-05-20 21:13:58]	[done]
+	build successfully !
+
+[2024-05-20 21:14:07]	[done]
+	build successfully !
+
+[2024-05-20 21:14:56]	[done]
+	build successfully !
+
+[2024-05-20 21:15:54]	[done]
+	build successfully !
+
+[2024-05-20 21:16:46]	[done]
+	build successfully !
+
+[2024-05-20 21:17:27]	[done]
+	build successfully !
+
+[2024-05-20 21:19:35]	[done]
+	build successfully !
+
+[2024-05-20 21:20:49]	[done]
+	build successfully !
+
+[2024-05-20 21:21:21]	[done]
+	build successfully !
+
+[2024-05-20 21:24:37]	[done]
+	build successfully !
+
+[2024-05-20 21:24:47]	[done]
+	build successfully !
+
+[2024-05-20 21:25:18]	[done]
+	build successfully !
+
+[2024-05-20 21:27:12]	[done]
+	build successfully !
+
+[2024-05-20 21:31:51]	compilation failed at : "d:\ALLtheDATA\STM32F103C8T6\STM32_Modules_R\MQTT_Test\Src\ESP01S.c", exit code: 1
+command: 
+  "D:\program\keil_5\ARM\ARMCC\bin\armcc.exe" -c --apcs=interwork -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I.cmsis/include -I../MDK-ARM/RTE/_EIDE_F103C8T6 -I.eide/deps -DUSE_HAL_DRIVER -DSTM32F103xB --cpu Cortex-M3 --li --c99 -D__MICROLIB -O3 --split_sections --diag_suppress=1 --diag_suppress=1295 -g -o .\build\EIDE_F103C8T6\.obj\__\Src\ESP01S.o --no_depend_system_headers --depend .\build\EIDE_F103C8T6\.obj\__\Src\ESP01S.d .\..\Src\ESP01S.c
+   at unify_builder.Program.Main(String[] args_)
+---
+".\..\Src\ESP01S.c", line 133: Error:  #167: argument of type "uint8_t *" is incompatible with parameter of type "uint16_t"
+                  LCD_ShowIntNum(0, 0, data, 1, 
+LACK, 
+HITE, 12);
+                                       ^
+.\..\Src\ESP01S.c: 0 warnings, 1 error
+
+[2024-05-20 21:32:06]	[done]
+	build successfully !
+
+[2024-05-20 21:33:04]	[done]
+	build successfully !
+
+[2024-05-20 21:34:23]	[done]
+	build successfully !
+
+[2024-05-20 21:35:56]	[done]
+	build successfully !
+
+[2024-05-20 21:37:31]	[done]
+	build successfully !
+
+[2024-05-20 21:37:35]	[done]
+	build successfully !
+
+[2024-05-20 21:39:14]	[done]
+	build successfully !
+
+[2024-05-20 21:50:37]	[done]
+	build successfully !
+
+[2024-05-20 21:50:45]	[done]
+	build successfully !
+
+[2024-05-20 21:54:37]	[done]
+	build successfully !
+
+[2024-05-20 21:55:59]	[done]
+	build successfully !
+
+[2024-05-20 22:01:16]	[done]
+	build successfully !
+
+[2024-05-20 22:02:27]	[done]
+	build successfully !
+
+[2024-05-20 22:24:12]	[done]
+	build successfully !
+

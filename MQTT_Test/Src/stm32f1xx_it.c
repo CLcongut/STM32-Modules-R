@@ -272,8 +272,8 @@ void HAL_UARTEx_RxEventCallback(UART_HandleTypeDef *huart, uint16_t Size)
     if (USART1_RX_BUF[0]) // A:0x41, W:0x57
     {
       memcpy(RX_DS.rx_data, USART1_RX_BUF, data_len);
-      LCD_Fill(0, 20, 128, 32, WHITE);
-      LCD_ShowString(0, 20, RX_DS.rx_data, BLACK, WHITE, 12, 0);
+      // LCD_Fill(0, 20, 128, 32, WHITE);
+      // LCD_ShowString(0, 20, RX_DS.rx_data, BLACK, WHITE, 12, 0);
       // sscanf((const char *)USART1_RX_BUF, "%*[^\r\n]%s\r\n", data);
       // update_sbus(USART1_RX_BUF, data_len);
     }
