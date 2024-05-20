@@ -32,3 +32,4 @@
 .\build\EIDE_F103C8T6\.obj\__\Src\main.o: ../Inc/lcd.h
 .\build\EIDE_F103C8T6\.obj\__\Src\main.o: ../Inc/lcd_init.h
 .\build\EIDE_F103C8T6\.obj\__\Src\main.o: ../Inc/ESP01S.h
+.\build\EIDE_F103C8T6\.obj\__\Src\main.o: ../Inc/DHT11.h

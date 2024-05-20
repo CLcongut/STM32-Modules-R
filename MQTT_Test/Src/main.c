@@ -1,20 +1,20 @@
 /* USER CODE BEGIN Header */
 /**
-  ******************************************************************************
-  * @file           : main.c
-  * @brief          : Main program body
-  ******************************************************************************
-  * @attention
-  *
-  * Copyright (c) 2024 STMicroelectronics.
-  * All rights reserved.
-  *
-  * This software is licensed under terms that can be found in the LICENSE file
-  * in the root directory of this software component.
-  * If no LICENSE file comes with this software, it is provided AS-IS.
-  *
-  ******************************************************************************
-  */
+ ******************************************************************************
+ * @file           : main.c
+ * @brief          : Main program body
+ ******************************************************************************
+ * @attention
+ *
+ * Copyright (c) 2024 STMicroelectronics.
+ * All rights reserved.
+ *
+ * This software is licensed under terms that can be found in the LICENSE file
+ * in the root directory of this software component.
+ * If no LICENSE file comes with this software, it is provided AS-IS.
+ *
+ ******************************************************************************
+ */
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
@@ -28,6 +28,7 @@
 #include "lcd.h"
 #include "lcd_init.h"
 #include "ESP01S.h"
+#include "DHT11.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -51,6 +52,8 @@
 
 uint8_t USART1_RX_BUF[USART_REC_LEN];
 RX_DATA_STRUCT RX_DS;
+
+
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -103,16 +106,18 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   LCD_Init();
   LCD_Fill(0, 0, LCD_W, LCD_H, WHITE);
-
+  LCD_ShowChar(18, 40, '.', BLACK, WHITE, 16, 0);
+  LCD_ShowChar(58, 40, '.', BLACK, WHITE, 16, 0);
   ESP_Init();
   while (1)
   {
-    // printf("AT\r\n");
-    // HAL_Delay(1000);
-    
+    // ESP_MQTT_Trans_DHT11();
+    // LCD_ShowIntNum(00, 40, 12, 2, BLACK, WHITE, 16);
+
+
     // LCD_Fill(0, 0, LCD_W, 20, WHITE);
     // HAL_Delay(1000);
-    
+
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */

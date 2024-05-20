@@ -28,3 +28,4 @@
 .\build\EIDE_F103C8T6\.obj\__\Src\ESP01S.o: ../Inc/ESP01S.h
 .\build\EIDE_F103C8T6\.obj\__\Src\ESP01S.o: ../Inc/usart.h
 .\build\EIDE_F103C8T6\.obj\__\Src\ESP01S.o: ../Inc/lcd.h
+.\build\EIDE_F103C8T6\.obj\__\Src\ESP01S.o: ../Inc/DHT11.h

@@ -1733,3 +1733,261 @@ HITE, 12);
 [2024-05-20 22:24:12]	[done]
 	build successfully !
 
+[2024-05-20 22:38:57]	compilation failed at : "d:\ALLtheDATA\STM32F103C8T6\STM32_Modules_R\MQTT_Test\Src\main.c", exit code: 1
+command: 
+  "D:\program\keil_5\ARM\ARMCC\bin\armcc.exe" -c --apcs=interwork -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I.cmsis/include -I../MDK-ARM/RTE/_EIDE_F103C8T6 -I.eide/deps -DUSE_HAL_DRIVER -DSTM32F103xB --cpu Cortex-M3 --li --c99 -D__MICROLIB -O3 --split_sections --diag_suppress=1 --diag_suppress=1295 -g -o .\build\EIDE_F103C8T6\.obj\__\Src\main.o --no_depend_system_headers --depend .\build\EIDE_F103C8T6\.obj\__\Src\main.d .\..\Src\main.c
+   at unify_builder.Program.Main(String[] args_)
+---
+".\..\Src\main.c", line 115: Error:  #20: identifier "buf" is undefined
+        LCD_ShowIntNum(00, 40, buf[2], 2, BLACK, WHITE, 16);
+                               ^
+.\..\Src\main.c: 0 warnings, 1 error
+
+[2024-05-20 22:39:06]	[done]
+	build successfully !
+
+[2024-05-20 22:40:02]	[done]
+	build successfully !
+
+[2024-05-20 22:40:49]	[done]
+	build successfully !
+
+[2024-05-20 22:41:11]	[done]
+	build successfully !
+
+[2024-05-20 22:42:12]	[done]
+	build successfully !
+
+[2024-05-20 22:44:04]	compilation failed at : "d:\ALLtheDATA\STM32F103C8T6\STM32_Modules_R\MQTT_Test\Src\main.c", exit code: 1
+command: 
+  "D:\program\keil_5\ARM\ARMCC\bin\armcc.exe" -c --apcs=interwork -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I.cmsis/include -I../MDK-ARM/RTE/_EIDE_F103C8T6 -I.eide/deps -DUSE_HAL_DRIVER -DSTM32F103xB --cpu Cortex-M3 --li --c99 -D__MICROLIB -O3 --split_sections --diag_suppress=1 --diag_suppress=1295 -g -o .\build\EIDE_F103C8T6\.obj\__\Src\main.o --no_depend_system_headers --depend .\build\EIDE_F103C8T6\.obj\__\Src\main.d .\..\Src\main.c
+   at unify_builder.Program.Main(String[] args_)
+---
+".\..\Src\main.c", line 109: Error:  #165: too few arguments in function call
+    LCD_ShowChar(18, 40, '.', 
+LACK, 
+HITE, 16);
+                                              ^
+".\..\Src\main.c", line 110: Error:  #165: too few arguments in function call
+    LCD_ShowChar(58, 40, '.', 
+LACK, 
+HITE, 16);
+                                              ^
+.\..\Src\main.c: 0 warnings, 2 errors
+
+[2024-05-20 22:44:28]	[done]
+	build successfully !
+
+[2024-05-20 22:52:00]	[done]
+	build successfully !
+
+[2024-05-20 22:55:14]	compilation failed at : "d:\ALLtheDATA\STM32F103C8T6\STM32_Modules_R\MQTT_Test\Src\ESP01S.c", exit code: 1
+command: 
+  "D:\program\keil_5\ARM\ARMCC\bin\armcc.exe" -c --apcs=interwork -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I.cmsis/include -I../MDK-ARM/RTE/_EIDE_F103C8T6 -I.eide/deps -DUSE_HAL_DRIVER -DSTM32F103xB --cpu Cortex-M3 --li --c99 -D__MICROLIB -O3 --split_sections --diag_suppress=1 --diag_suppress=1295 -g -o .\build\EIDE_F103C8T6\.obj\__\Src\ESP01S.o --no_depend_system_headers --depend .\build\EIDE_F103C8T6\.obj\__\Src\ESP01S.d .\..\Src\ESP01S.c
+   at unify_builder.Program.Main(String[] args_)
+---
+".\..\Src\ESP01S.c", line 296: Error:  #55-D: too many arguments in invocation of macro "ESP_Transmit"
+          ESP_Transmit("AT+MQTTPUB=0,\"" mqtt_pub_TOPIC "\",\"{\\\"params\\\":{\\\"temperature\\\":%f}}\",0,0\r\n", temp);
+                                                                                                                    ^
+".\..\Src\ESP01S.c", line 296: Warning:  #224-D: the format string requires additional arguments
+          
+SP_Transmit("AT+MQTTPUB=0,\"" mqtt_pub_TOPIC "\",\"{\\\"params\\\":{\\\"temperature\\\":%f}}\",0,0\r\n", temp);
+          ^
+".\..\Src\ESP01S.c", line 286: Warning:  #550-D: variable "temp" was set but never used
+      float temp;
+            ^
+.\..\Src\ESP01S.c: 2 warnings, 1 error
+
+[2024-05-20 22:56:04]	[done]
+	build successfully !
+
+[2024-05-20 22:56:33]	[done]
+	build successfully !
+
+[2024-05-20 22:57:37]	[done]
+	build successfully !
+
+[2024-05-20 23:02:59]	[done]
+	build successfully !
+
+[2024-05-20 23:05:12]	[done]
+	build successfully !
+
+[2024-05-20 23:06:43]	[done]
+	build successfully !
+
+[2024-05-20 23:18:21]	[done]
+	build successfully !
+
+[2024-05-20 23:20:21]	[done]
+	build successfully !
+
+[2024-05-20 23:20:53]	[done]
+	build successfully !
+
+[2024-05-20 23:21:07]	[done]
+	build successfully !
+
+[2024-05-20 23:24:47]	compilation failed at : "d:\ALLtheDATA\STM32F103C8T6\STM32_Modules_R\MQTT_Test\Src\lcd.c", exit code: 1
+command: 
+  "D:\program\keil_5\ARM\ARMCC\bin\armcc.exe" -c --apcs=interwork -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I.cmsis/include -I../MDK-ARM/RTE/_EIDE_F103C8T6 -I.eide/deps -DUSE_HAL_DRIVER -DSTM32F103xB --cpu Cortex-M3 --li --c99 -D__MICROLIB -O3 --split_sections --diag_suppress=1 --diag_suppress=1295 -g -o .\build\EIDE_F103C8T6\.obj\__\Src\lcd.o --no_depend_system_headers --depend .\build\EIDE_F103C8T6\.obj\__\Src\lcd.d .\..\Src\lcd.c
+   at unify_builder.Program.compileByMulThread(Int32 thrNum, CmdInfo[] cmds_, List`1 errLogs)
+   at unify_builder.Program.Main(String[] args_)
+---
+"../Inc/main.h", line 62: Error:  #65: expected a ";"
+      uint8_t rx_dn_flag = 0;
+                         ^
+.\..\Src\DHT11.c: 0 warnings, 1 error
+"../Inc/main.h", line 62: Error:  #65: expected a ";"
+      uint8_t rx_dn_flag = 0;
+                         ^
+.\..\Src\ESP01S.c: 0 warnings, 1 error
+"../Inc/main.h", line 62: Error:  #65: expected a ";"
+      uint8_t rx_dn_flag = 0;
+                         ^
+.\..\Src\dma.c: 0 warnings, 1 error
+"../Inc/main.h", line 62: Error:  #65: expected a ";"
+      uint8_t rx_dn_flag = 0;
+                         ^
+.\..\Src\gpio.c: 0 warnings, 1 error
+"../Inc/main.h", line 62: Error:  #65: expected a ";"
+      uint8_t rx_dn_flag = 0;
+                         ^
+.\..\Src\lcd.c: 0 warnings, 1 error
+
+[2024-05-20 23:24:53]	[done]
+	build successfully !
+
+[2024-05-20 23:39:04]	[done]
+	build successfully !
+
+[2024-05-20 23:39:15]	[done]
+	build successfully !
+
+[2024-05-20 23:40:16]	[done]
+	build successfully !
+
+[2024-05-20 23:40:53]	[done]
+	build successfully !
+
+[2024-05-20 23:41:12]	[done]
+	build successfully !
+
+[2024-05-20 23:43:29]	[done]
+	build successfully !
+
+[2024-05-20 23:44:38]	[done]
+	build successfully !
+
+[2024-05-20 23:52:48]	compilation failed at : "d:\ALLtheDATA\STM32F103C8T6\STM32_Modules_R\MQTT_Test\Src\stm32f1xx_it.c", exit code: 1
+command: 
+  "D:\program\keil_5\ARM\ARMCC\bin\armcc.exe" -c --apcs=interwork -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I.cmsis/include -I../MDK-ARM/RTE/_EIDE_F103C8T6 -I.eide/deps -DUSE_HAL_DRIVER -DSTM32F103xB --cpu Cortex-M3 --li --c99 -D__MICROLIB -O3 --split_sections --diag_suppress=1 --diag_suppress=1295 -g -o .\build\EIDE_F103C8T6\.obj\__\Src\stm32f1xx_it.o --no_depend_system_headers --depend .\build\EIDE_F103C8T6\.obj\__\Src\stm32f1xx_it.d .\..\Src\stm32f1xx_it.c
+   at unify_builder.Program.Main(String[] args_)
+---
+".\..\Src\stm32f1xx_it.c", line 278: Error:  #167: argument of type "uint8_t" is incompatible with parameter of type "const uint8_t *"
+        LCD_ShowString(0, 20, data_len, 
+LACK, 
+HITE, 12, 0);
+                              ^
+.\..\Src\stm32f1xx_it.c: 0 warnings, 1 error
+
+[2024-05-20 23:53:43]	[done]
+	build successfully !
+
+[2024-05-21 00:03:58]	[done]
+	build successfully !
+
+[2024-05-21 00:27:52]	[done]
+	build successfully !
+
+[2024-05-21 00:28:36]	[done]
+	build successfully !
+
+[2024-05-21 00:30:57]	[done]
+	build successfully !
+
+[2024-05-21 00:32:09]	[done]
+	build successfully !
+
+[2024-05-21 00:35:24]	[done]
+	build successfully !
+
+[2024-05-21 00:35:47]	compilation failed at : "d:\ALLtheDATA\STM32F103C8T6\STM32_Modules_R\MQTT_Test\Src\ESP01S.c", exit code: 1
+command: 
+  "D:\program\keil_5\ARM\ARMCC\bin\armcc.exe" -c --apcs=interwork -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I.cmsis/include -I../MDK-ARM/RTE/_EIDE_F103C8T6 -I.eide/deps -DUSE_HAL_DRIVER -DSTM32F103xB --cpu Cortex-M3 --li --c99 -D__MICROLIB -O3 --split_sections --diag_suppress=1 --diag_suppress=1295 -g -o .\build\EIDE_F103C8T6\.obj\__\Src\ESP01S.o --no_depend_system_headers --depend .\build\EIDE_F103C8T6\.obj\__\Src\ESP01S.d .\..\Src\ESP01S.c
+   at unify_builder.Program.Main(String[] args_)
+---
+".\..\Src\ESP01S.c", line 168: Error:  #20: identifier "data_rx" is undefined
+          data_rx = RX_DS.rx_data;
+          ^
+.\..\Src\ESP01S.c: 0 warnings, 1 error
+
+[2024-05-21 00:36:19]	[done]
+	build successfully !
+
+[2024-05-21 00:40:21]	[done]
+	build successfully !
+
+[2024-05-21 00:42:34]	[done]
+	build successfully !
+
+[2024-05-21 00:49:11]	[done]
+	build successfully !
+
+[2024-05-21 00:49:56]	[done]
+	build successfully !
+
+[2024-05-21 00:50:40]	[done]
+	build successfully !
+
+[2024-05-21 00:50:46]	[done]
+	build successfully !
+
+[2024-05-21 00:50:53]	[done]
+	build successfully !
+
+[2024-05-21 01:07:25]	[done]
+	build successfully !
+
+[2024-05-21 01:10:14]	[done]
+	build successfully !
+
+[2024-05-21 01:10:56]	[done]
+	build successfully !
+
+[2024-05-21 01:11:15]	[done]
+	build successfully !
+
+[2024-05-21 01:11:58]	[done]
+	build successfully !
+
+[2024-05-21 01:12:26]	[done]
+	build successfully !
+
+[2024-05-21 01:14:08]	[done]
+	build successfully !
+
+[2024-05-21 01:14:32]	[done]
+	build successfully !
+
+[2024-05-21 01:16:07]	[done]
+	build successfully !
+
+[2024-05-21 01:20:12]	[done]
+	build successfully !
+
+[2024-05-21 01:25:48]	[done]
+	build successfully !
+
+[2024-05-21 01:27:43]	[done]
+	build successfully !
+
+[2024-05-21 01:29:12]	[done]
+	build successfully !
+
+[2024-05-21 01:48:06]	[done]
+	build successfully !
+
+[2024-05-21 01:52:24]	[done]
+	build successfully !
+

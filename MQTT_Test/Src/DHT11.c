@@ -37,7 +37,7 @@ void Delay_us(__IO uint32_t delay)
 void DHT_GPIO_SET_OUTPUT(void) // 设置GPIOx为输出模式（MCU的IO口向DHT11发激活信号）
 {
     GPIO_InitTypeDef GPIO_InitStructure; // 在GPIO_InitTypeDef结构体中修改IO口参数（结构体成员）
-    GPIO_InitStructure.Pin = DHT11_Pin; // 设置的格式必须严格遵循注释，比如GPIO_PIN_define
+    GPIO_InitStructure.Pin = DHT11_Pin;  // 设置的格式必须严格遵循注释，比如GPIO_PIN_define
     GPIO_InitStructure.Mode = GPIO_MODE_OUTPUT_PP;
     //	GPIO_InitStructure.Pull=;
     GPIO_InitStructure.Speed = GPIO_SPEED_FREQ_HIGH;
@@ -109,7 +109,7 @@ uint8_t DHT_Read(uint8_t *buf)
     uint8_t i;
     uint8_t *Data = buf;
 
-    DHT_GPIO_SET_OUTPUT();                                // IO设置为输出模式。在传输的最开始，MCU要向DHT11发送信号
+    DHT_GPIO_SET_OUTPUT();                                         // IO设置为输出模式。在传输的最开始，MCU要向DHT11发送信号
     HAL_GPIO_WritePin(DHT11_GPIO_Port, DHT11_Pin, GPIO_PIN_RESET); // IO->DHT11:先拉低电平18ms（应时序要求）
     HAL_Delay(18);
     HAL_GPIO_WritePin(DHT11_GPIO_Port, DHT11_Pin, GPIO_PIN_SET); // IO->DHT11:随后拉高电平20us

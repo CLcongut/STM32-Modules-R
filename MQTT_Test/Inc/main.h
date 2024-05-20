@@ -23,8 +23,7 @@
 #define __MAIN_H
 
 #ifdef __cplusplus
-extern "C"
-{
+extern "C" {
 #endif
 
 /* Includes ------------------------------------------------------------------*/
@@ -34,10 +33,10 @@ extern "C"
 /* USER CODE BEGIN Includes */
 #include <stdio.h>
 #include <string.h>
-    /* USER CODE END Includes */
+/* USER CODE END Includes */
 
-    /* Exported types ------------------------------------------------------------*/
-    /* USER CODE BEGIN ET */
+/* Exported types ------------------------------------------------------------*/
+/* USER CODE BEGIN ET */
 
 /* USER CODE END ET */
 
@@ -48,7 +47,7 @@ extern "C"
 
 /* Exported macro ------------------------------------------------------------*/
 /* USER CODE BEGIN EM */
-#define USART_REC_LEN 100
+#define USART_REC_LEN 200
 /* USER CODE END EM */
 
 /* Exported functions prototypes ---------------------------------------------*/
@@ -60,6 +59,7 @@ extern uint8_t USART1_RX_BUF[USART_REC_LEN];
 typedef struct
 {
     uint8_t rx_data[USART_REC_LEN];
+    uint8_t rx_dn_flag;
 } RX_DATA_STRUCT;
 
 extern RX_DATA_STRUCT RX_DS;
@@ -76,10 +76,12 @@ extern RX_DATA_STRUCT RX_DS;
 #define DC_GPIO_Port GPIOB
 #define RES_Pin GPIO_PIN_15
 #define RES_GPIO_Port GPIOB
+#define LED1_Pin GPIO_PIN_5
+#define LED1_GPIO_Port GPIOB
 
-    /* USER CODE BEGIN Private defines */
+/* USER CODE BEGIN Private defines */
 
-    /* USER CODE END Private defines */
+/* USER CODE END Private defines */
 
 #ifdef __cplusplus
 }

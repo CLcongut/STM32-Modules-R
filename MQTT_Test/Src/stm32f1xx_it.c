@@ -24,6 +24,7 @@
 /* USER CODE BEGIN Includes */
 #include "usart.h"
 #include "lcd.h"
+#include "ESP01S.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -69,8 +70,8 @@ extern UART_HandleTypeDef huart1;
 /*           Cortex-M3 Processor Interruption and Exception Handlers          */
 /******************************************************************************/
 /**
- * @brief This function handles Non maskable interrupt.
- */
+  * @brief This function handles Non maskable interrupt.
+  */
 void NMI_Handler(void)
 {
   /* USER CODE BEGIN NonMaskableInt_IRQn 0 */
@@ -84,8 +85,8 @@ void NMI_Handler(void)
 }
 
 /**
- * @brief This function handles Hard fault interrupt.
- */
+  * @brief This function handles Hard fault interrupt.
+  */
 void HardFault_Handler(void)
 {
   /* USER CODE BEGIN HardFault_IRQn 0 */
@@ -99,8 +100,8 @@ void HardFault_Handler(void)
 }
 
 /**
- * @brief This function handles Memory management fault.
- */
+  * @brief This function handles Memory management fault.
+  */
 void MemManage_Handler(void)
 {
   /* USER CODE BEGIN MemoryManagement_IRQn 0 */
@@ -114,8 +115,8 @@ void MemManage_Handler(void)
 }
 
 /**
- * @brief This function handles Prefetch fault, memory access fault.
- */
+  * @brief This function handles Prefetch fault, memory access fault.
+  */
 void BusFault_Handler(void)
 {
   /* USER CODE BEGIN BusFault_IRQn 0 */
@@ -129,8 +130,8 @@ void BusFault_Handler(void)
 }
 
 /**
- * @brief This function handles Undefined instruction or illegal state.
- */
+  * @brief This function handles Undefined instruction or illegal state.
+  */
 void UsageFault_Handler(void)
 {
   /* USER CODE BEGIN UsageFault_IRQn 0 */
@@ -144,8 +145,8 @@ void UsageFault_Handler(void)
 }
 
 /**
- * @brief This function handles System service call via SWI instruction.
- */
+  * @brief This function handles System service call via SWI instruction.
+  */
 void SVC_Handler(void)
 {
   /* USER CODE BEGIN SVCall_IRQn 0 */
@@ -157,8 +158,8 @@ void SVC_Handler(void)
 }
 
 /**
- * @brief This function handles Debug monitor.
- */
+  * @brief This function handles Debug monitor.
+  */
 void DebugMon_Handler(void)
 {
   /* USER CODE BEGIN DebugMonitor_IRQn 0 */
@@ -170,8 +171,8 @@ void DebugMon_Handler(void)
 }
 
 /**
- * @brief This function handles Pendable request for system service.
- */
+  * @brief This function handles Pendable request for system service.
+  */
 void PendSV_Handler(void)
 {
   /* USER CODE BEGIN PendSV_IRQn 0 */
@@ -183,8 +184,8 @@ void PendSV_Handler(void)
 }
 
 /**
- * @brief This function handles System tick timer.
- */
+  * @brief This function handles System tick timer.
+  */
 void SysTick_Handler(void)
 {
   /* USER CODE BEGIN SysTick_IRQn 0 */
@@ -204,8 +205,8 @@ void SysTick_Handler(void)
 /******************************************************************************/
 
 /**
- * @brief This function handles DMA1 channel3 global interrupt.
- */
+  * @brief This function handles DMA1 channel3 global interrupt.
+  */
 void DMA1_Channel3_IRQHandler(void)
 {
   /* USER CODE BEGIN DMA1_Channel3_IRQn 0 */
@@ -218,8 +219,8 @@ void DMA1_Channel3_IRQHandler(void)
 }
 
 /**
- * @brief This function handles DMA1 channel4 global interrupt.
- */
+  * @brief This function handles DMA1 channel4 global interrupt.
+  */
 void DMA1_Channel4_IRQHandler(void)
 {
   /* USER CODE BEGIN DMA1_Channel4_IRQn 0 */
@@ -232,8 +233,8 @@ void DMA1_Channel4_IRQHandler(void)
 }
 
 /**
- * @brief This function handles DMA1 channel5 global interrupt.
- */
+  * @brief This function handles DMA1 channel5 global interrupt.
+  */
 void DMA1_Channel5_IRQHandler(void)
 {
   /* USER CODE BEGIN DMA1_Channel5_IRQn 0 */
@@ -246,8 +247,8 @@ void DMA1_Channel5_IRQHandler(void)
 }
 
 /**
- * @brief This function handles USART1 global interrupt.
- */
+  * @brief This function handles USART1 global interrupt.
+  */
 void USART1_IRQHandler(void)
 {
   /* USER CODE BEGIN USART1_IRQn 0 */
@@ -263,6 +264,8 @@ void USART1_IRQHandler(void)
 void HAL_UARTEx_RxEventCallback(UART_HandleTypeDef *huart, uint16_t Size)
 {
   uint8_t data_len;
+  uint8_t line1[25];
+  // uint8_t line2[25];
   // uint8_t rx_buf_data[25];
   // uint8_t data[USART_REC_LEN];
   if (huart->Instance == USART1)
@@ -271,9 +274,14 @@ void HAL_UARTEx_RxEventCallback(UART_HandleTypeDef *huart, uint16_t Size)
     data_len = USART_REC_LEN - __HAL_DMA_GET_COUNTER(&hdma_usart1_rx);
     if (USART1_RX_BUF[0]) // A:0x41, W:0x57
     {
+      // ESP_MQTT_Recei_LED();
       memcpy(RX_DS.rx_data, USART1_RX_BUF, data_len);
-      // LCD_Fill(0, 20, 128, 32, WHITE);
-      // LCD_ShowString(0, 20, RX_DS.rx_data, BLACK, WHITE, 12, 0);
+      LCD_Fill(0, 20, 128, 45, WHITE);
+      sscanf((const char *)RX_DS.rx_data, "%23s", line1);
+      // sscanf((const char *)RX_DS.rx_data, "%20[]", line2);
+      LCD_ShowString(0, 20, line1, BLACK, WHITE, 12, 0);
+      // LCD_ShowString(0, 33, line2, BLACK, WHITE, 12, 0);
+      // LCD_ShowIntNum(20, 20, data_len, 2, BLACK, WHITE, 16);
       // sscanf((const char *)USART1_RX_BUF, "%*[^\r\n]%s\r\n", data);
       // update_sbus(USART1_RX_BUF, data_len);
     }

@@ -28,3 +28,4 @@
 .\build\EIDE_F103C8T6\.obj\__\Src\stm32f1xx_it.o: ../Inc/stm32f1xx_it.h
 .\build\EIDE_F103C8T6\.obj\__\Src\stm32f1xx_it.o: ../Inc/usart.h
 .\build\EIDE_F103C8T6\.obj\__\Src\stm32f1xx_it.o: ../Inc/lcd.h
+.\build\EIDE_F103C8T6\.obj\__\Src\stm32f1xx_it.o: ../Inc/ESP01S.h
