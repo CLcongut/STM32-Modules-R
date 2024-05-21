@@ -47,7 +47,7 @@ extern "C" {
 
 /* Exported macro ------------------------------------------------------------*/
 /* USER CODE BEGIN EM */
-#define USART_REC_LEN 200
+#define USART_REC_LEN 300
 /* USER CODE END EM */
 
 /* Exported functions prototypes ---------------------------------------------*/
@@ -68,6 +68,10 @@ extern RX_DATA_STRUCT RX_DS;
 /* Private defines -----------------------------------------------------------*/
 #define DHT11_Pin GPIO_PIN_4
 #define DHT11_GPIO_Port GPIOA
+#define Key2_Pin GPIO_PIN_10
+#define Key2_GPIO_Port GPIOB
+#define Key1_Pin GPIO_PIN_11
+#define Key1_GPIO_Port GPIOB
 #define BLK_Pin GPIO_PIN_12
 #define BLK_GPIO_Port GPIOB
 #define CS_Pin GPIO_PIN_13

@@ -4,6 +4,16 @@
 #include "lcd.h"
 #include "DHT11.h"
 
+//{“method":"thing.service.property.set","id":"901960597","params":{"deng":1},"version":"1.0.0"}//94
+
+/**************************
+ * 解析返回的json格式
+ * 用strstr找到关键词 deng 的地址也就是d的位置
+ * 然后指针往右移动strlen("deng")+2的位置
+ * 读取指针第一位进行比较
+ * 操作
+ */
+
 /*回显开关*/
 // #define REPLAY_ON
 
@@ -29,8 +39,11 @@
  * 开始 >>
  */
 /*要让ESP01S连接的WIFI信息*/
-#define wifi_SSID "CLcongut" // WIFI名字，不可中文
-#define wifi_PSWD "qwertyui" // WIFI密码，不可中文，最好 8 位
+#define wifi_SSID "RedmiK50" // WIFI名字，不可中文
+#define wifi_PSWD "1597638189" // WIFI密码，不可中文，最好 8 位
+
+// #define wifi_SSID "RedmiK50"
+// #define wifi_PSWD "1597638189"
 
 /*设备名称*/
 #define DeviceName "dht11"
@@ -47,6 +60,9 @@
 #define mqtt_pub_TOPIC "/sys/a15ZWaMgl9e/" DeviceName "/thing/event/property/post"
 /*订阅主题*/
 #define mqtt_sub_TOPIC "/sys/a15ZWaMgl9e/" DeviceName "/thing/service/property/set"
+
+/*设备对象关键字*/
+#define params_NAME "deng"
 /********************************************************************************
  * << 结束
  */
@@ -90,61 +106,39 @@ void gui_dp_info(const uint8_t *_info)
     LCD_ShowString(0, 0, _info, BLACK, WHITE, 12, 0);
 }
 
+/**
+ * @brief 清除接收缓存
+ * 
+ */
 void ESP_RXBUF_Clear(void)
 {
-    memset(USART1_RX_BUF, 0x00, USART_REC_LEN);
+    memset(RX_DS.rx_data, 0x00, USART_REC_LEN);
 }
 
 /**
  * @brief 判断WIFI是否连接成功，若超时无法找到或连接WIFI，则重新尝试连接
  *
  */
-// void ESP_JudgeWIFI(void)
-// {
-//     uint8_t data[25];
-//     /*全局结构体成员，使用也要创个变量来赋值，不可直接使用，更不能强制转换*/
-//     uint8_t *data_rx;
-//     while (1)
-//     {
-//         data_rx = RX_DS.rx_data;
-//         /*使用 %*[^\r\n] 来跳过内容时，必须在\r\n前还有内容，否则会卡住，不如直接使用以下方式*/
-//         if (data_rx[0] == 'W')
-//         {
-//             sscanf((const char *)data_rx, "WIFI %1[^ ]", data);
-//             if (memcmp((const char *)data, "C", strlen("C")) == 0) // WIFI CONNECTED
-//             {
-//                 gui_dp_info("WIFI CONNECTED");
-//                 break;
-//             }
-//             else if (memcmp((const char *)data, "G", strlen("G")) == 0) // WIFI GOT IP
-//             {
-//                 gui_dp_info("WIFI CONNECTED");
-//                 break;
-//             }
-//         }
-//         else if (data_rx[0] == '+') //+CWJAP
-//         {
-//             gui_dp_info("WIFI NOT FOUND");
-//             /*重新开始流程*/
-//             ESP_Init();
-//         }
-//     }
-// }
-
 void ESP_JudgeWIFI(void)
 {
+    /*全局结构体成员，使用也要创个变量来赋值，不可直接使用，更不能强制转换*/
     uint8_t *data_rx;
     while (1)
     {
         data_rx = RX_DS.rx_data;
+        /*判断接收到的是否是OK*/
         if (strstr((const char *)data_rx, "OK"))
         {
             gui_dp_info("WIFI CONNECTED");
+            HAL_Delay(1500);
             break;
         }
-        else
+        else if (strstr((const char *)data_rx, "ERROR"))
         {
             gui_dp_info("WIFI NOT FOUND");
+            HAL_Delay(1500);
+            ESP_RXBUF_Clear();
+            /*嵌套初始化函数达到重新尝试连接的目的*/
             ESP_Init();
         }
     }
@@ -155,51 +149,48 @@ void ESP_JudgeWIFI(void)
  * @brief 判断MQTT域名是否连接成功，若超时无法连接MQTT域名，则重新尝试连接
  *
  */
-// void ESP_JudgeMQTT(void)
-// {
-//     uint8_t data[25];
-//     uint8_t *data_rx;
-//     while (1)
-//     {
-//         data_rx = RX_DS.rx_data;
-//         HAL_Delay(500);
-
-//         sscanf((const char *)data_rx, "%*[^\r\n]%s\r\n", data);
-//         if (memcmp((const char *)data, "OK", strlen("OK")) == 0)
-//         {
-//             gui_dp_info("MQTT CONNECTED");
-//             break;
-//         }
-//         else
-//         {
-//             gui_dp_info("MQTT CONN FAIL");
-//             ESP_Init();
-//         }
-//     }
-// }
 void ESP_JudgeMQTT(void)
 {
     uint8_t *data_rx;
     while (1)
     {
         data_rx = RX_DS.rx_data;
-        HAL_Delay(4000);
-
         if (strstr((const char *)data_rx, "OK"))
         {
             gui_dp_info("MQTT CONNECTED");
+            HAL_Delay(1500);
             MQTT_CONN_Flag = 0;
             break;
         }
-        else
+        else if (strstr((const char *)data_rx, "ERROR"))
         {
             gui_dp_info("MQTT CONN FAIL");
+            HAL_Delay(3000);
             MQTT_CONN_Flag = 1;
+            ESP_RXBUF_Clear();
             HAL_Delay(3000);
             ESP_Init();
         }
     }
     ESP_RXBUF_Clear();
+}
+
+/**
+ * @brief 解析云平台发送的JSON数据
+ * 
+ * @param jsond 要解析的数据
+ * @param flagd 要找的对象关键字字符串
+ * @return char 
+ */
+char ESP_Parse_Json(uint8_t *jsond, const char *flagd)
+{
+    /*用来指向对象关键字的指针*/
+    char *pflag;
+    /*指向strstr()函数找到的字符串首字母位置*/
+    pflag = strstr((const char *)jsond, flagd);
+    /*根据分析JSON数据格式得出要找的对象的值的位置*/
+    pflag += strlen(flagd) + 2;
+    return *pflag;
 }
 
 /**
@@ -293,21 +284,29 @@ void ESP_Init(void)
          * @brief 设置WIFI名字和密码，并且连接
          *
          */
-        ESP_Transmit(cmd_CWJAP);
         ESP_Open_Receive;
+        ESP_Transmit(cmd_CWJAP);
         HAL_Delay(1500);
         gui_dp_info("WIFI SET DONE");
+        HAL_Delay(1500);
         ESP_JudgeWIFI();
 #endif
+#ifdef  MQTT_ONLY
 
+        HAL_Delay(1500);
+        ESP_Transmit(cmd_MQTTCLEAN);
+        HAL_Delay(1500);
+        gui_dp_info("MQTT DISCONN");
+        HAL_Delay(3000);
+#endif
         /**
          * @brief 设定MQTT用户名和密钥
          *
          */
-        HAL_Delay(1500);
         ESP_Close_Receive;
-        ESP_Transmit(cmd_MQTTUSERCFG);
         HAL_Delay(1500);
+        ESP_Transmit(cmd_MQTTUSERCFG);
+        HAL_Delay(2000);
         gui_dp_info("SET MQTT USERCFG");
 
         /**
@@ -323,13 +322,17 @@ void ESP_Init(void)
      * @brief 设定并连接MQTT域名
      *
      */
+    ESP_Open_Receive;
     ESP_Transmit(cmd_MQTTCONN);
     HAL_Delay(4000);
-    ESP_Open_Receive;
     gui_dp_info("SET MQTT URL");
     HAL_Delay(4000);
     ESP_JudgeMQTT();
 
+    /**
+     * @brief 订阅MQTT主题
+     * 
+     */
     ESP_Transmit("AT+MQTTSUB=0,\"" mqtt_sub_TOPIC "\",1\r\n");
     HAL_Delay(3000);
     gui_dp_info("TOPIC SUB");
@@ -341,14 +344,12 @@ void ESP_MQTT_Trans_DHT11(void)
     float temp, humi;
     if (DHT_Read(tah_data))
     {
-        LCD_ShowIntNum(00, 40, tah_data[2], 2, BLACK, WHITE, 16);
-        LCD_ShowIntNum(20, 40, tah_data[3], 2, BLACK, WHITE, 16);
-
-        LCD_ShowIntNum(40, 40, tah_data[0], 2, BLACK, WHITE, 16);
-        LCD_ShowIntNum(60, 40, tah_data[1], 2, BLACK, WHITE, 16);
-
         temp = tah_data[2] + tah_data[3] / 100.0;
         humi = tah_data[0] + tah_data[1] / 100.0;
+
+        LCD_ShowFloatNum1(00, 80, temp, 4, BLACK, WHITE, 16);
+        LCD_ShowFloatNum1(00, 100, humi, 4, BLACK, WHITE, 16);
+
         printf("AT+MQTTPUB=0,\"" mqtt_pub_TOPIC "\",\"{\\\"params\\\":{\\\"temperature\\\":%f}}\",0,0\r\n", temp);
         HAL_Delay(3000);
         printf("AT+MQTTPUB=0,\"" mqtt_pub_TOPIC "\",\"{\\\"params\\\":{\\\"humidity\\\":%f}}\",0,0\r\n", humi);
@@ -359,15 +360,24 @@ void ESP_MQTT_Trans_DHT11(void)
 
 void ESP_MQTT_Recei_LED(void)
 {
-    if (1)
+    if (!RX_DS.rx_dn_flag)
     {
         uint8_t *data_rx;
         data_rx = RX_DS.rx_data;
+        uint8_t json_body[128];
+        int strlen;
         if (strstr((const char *)data_rx, "+MQTTSUBRECV:"))
         {
-            // HAL_GPIO_WritePin(LED1_GPIO_Port, LED1_Pin, GPIO_PIN_SET);
-            HAL_GPIO_TogglePin(LED1_GPIO_Port, LED1_Pin);
+            sscanf((const char *)data_rx, "+MQTTSUBRECV:0,\"" mqtt_sub_TOPIC "\",%d,%s", &strlen, json_body);
+            if (ESP_Parse_Json(json_body, params_NAME) == '1')
+            {
+                HAL_GPIO_WritePin(LED1_GPIO_Port, LED1_Pin, GPIO_PIN_SET);
+            }
+            else
+            {
+                HAL_GPIO_WritePin(LED1_GPIO_Port, LED1_Pin, GPIO_PIN_RESET);
+            }
+            ESP_RXBUF_Clear();
         }
-        ESP_RXBUF_Clear();
     }
 }
